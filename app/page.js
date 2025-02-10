@@ -9,7 +9,15 @@ export default function Home() {
     <div className="relative w-full min-h-screen">
       {/* Navbar */}
       <nav className="absolute top-0 left-0 w-[60%] flex justify-between items-center p-6 bg-white shadow-md z-10">
-        <h1 className="text-xl uppercase text-gray-700 font-medium">Emphasis Architects</h1>
+      <Image
+          src="/logo.png" 
+          alt="Scenic View"
+          // layout="fill"
+          objectFit="cover"
+          width={200}
+          height={10}
+          className="z-0"
+        />
         <ul className="hidden md:flex space-x-6 font-normal text-sm text-gray-700 uppercase">
           <li>Home</li>
           <li>Pages</li>
