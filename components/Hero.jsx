@@ -65,9 +65,8 @@ export default function Hero() {
 
         {/* Mobile Drawer Menu */}
         <div
-          className={`fixed top-0 left-0 h-full w-3/4 bg-amber-50 text-black transform ${
-            menuOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 ease-in-out z-20`}
+          className={`fixed top-0 left-0 h-full w-3/4 bg-amber-50 text-black transform ${menuOpen ? "translate-x-0" : "-translate-x-full"
+            } transition-transform duration-300 ease-in-out z-20`}
         >
           <div className="flex">
             <Link href="/">
@@ -127,9 +126,11 @@ export default function Hero() {
             Apply now! Contemporary architecture solutions for stylish, urban
             residences.
           </p>
-          <button className="mt-6 px-10 py-4 md:px-9 md:py-4 border-white border-2 text-md font-normal tracking-widest bg-white text-black rounded-full hover:bg-black hover:text-white">
-            VIEW MORE
-          </button>
+          <Link href="/services">
+            <button className="mt-6 px-10 py-4 md:px-9 md:py-4 border-white cursor-pointer border-2 text-md font-normal tracking-widest bg-white text-black rounded-full hover:bg-black hover:text-white">
+              VIEW MORE
+            </button>
+          </Link>
         </div>
       </div>
     </div>

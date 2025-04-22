@@ -74,7 +74,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2">
             {["Home", "About", "Services", "Projects", "Contact"].map((link) => (
               <li key={link}>
-                <Link href={`/${link.toLowerCase()}`} className="hover:text-black">
+                <Link href={`/${link.toLowerCase()}`} >
                   {link}
                 </Link>
               </li>
