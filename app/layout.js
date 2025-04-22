@@ -2,6 +2,8 @@
 
 import { Gayathri } from "next/font/google";
 import "./globals.css";
+import WhatsappButton from "@/components/WhatsappButton";
+import Footer from "@/components/Footer";
 
 const gayathri = Gayathri({
   weight: ["100", "400", "700"], 
@@ -21,6 +23,8 @@ export default function RootLayout({ children }) {
       className={gayathri.className}
       >
         {children}
+        <Footer/>
+        <WhatsappButton/>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ export default function Third() {
         {/* L Content (Image Section) */}
       <div className="w-full md:w-4/5 h-2/5 md:h-full bg-cover bg-center relative">
         <Image
-          src="/3.jpg" // Replace with your actual image path
+          src="/3.jpg" 
           alt="Harmony of Shapes"
           width={1200}
           height={800}

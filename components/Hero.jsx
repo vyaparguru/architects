@@ -14,13 +14,13 @@ export default function Hero() {
         style={{ backgroundImage: "url('/hero.jpg')" }}
       >
         {/* Navbar */}
-        <nav className="absolute top-4 left-4 flex items-center space-x-4 md:space-x-8 text-white z-10 ">
+        <nav className="absolute top-4 left-4 flex items-center space-x-4 md:space-x-8 text-white text-xl z-10 ">
         <Image
             src="/logo.png" 
             alt="Icon"
             width={150} // 12 * 4 (Tailwind's w-12)
             height={48} // 12 * 4 (Tailwind's h-12)
-            className="mb-4"
+            className="mb-0"
           />
           <ul className="hidden md:flex space-x-6">
             <li className="cursor-pointer">Home</li>

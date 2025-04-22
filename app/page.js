@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import HarmonySection from "@/components/HarmonySection";
 import Third from "@/components/Third";
 import Fourth from "@/components/Fourth";
+import ProjectsSection from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <HarmonySection/>
     <Third/>
     <Fourth/>
+    <ProjectsSection/>
     </>
   );
 }
