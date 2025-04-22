@@ -1,5 +1,5 @@
+"use client"
 import Image from "next/image";
-
 export default function ProjectsSection() {
   const projects = [
     {
@@ -34,12 +34,12 @@ export default function ProjectsSection() {
   return (
     <section className="max-w-full mx-auto px-6 md:px-12 lg:px-28 py-16 md:py-24 bg-amber-50 text-gray-900">
       {/* Heading */}
-      <h2 className="text-3xl md:text-5xl font-semibold text-center">
+      <h2 className="text-4xl md:text-6xl md:text-center">
         ARCHITECTURE PROJECTS
       </h2>
 
       {/* Subtitle */}
-      <p className="text-gray-600 text-start mt-4 max-w-4xl mx-auto">
+      <p className="text-black text-lg md:text-xl md:text-center mt-4 max-w-4xl mx-auto font-light leading-relxed">
       The profession of interior design has been a consequence of the development of society and the complex architecture that has resulted from the development of industrial processes. The pursuit of effective use of space, user well-being and functional design has contributed to the development of the contemporary interior design profession.
       </p>
 
