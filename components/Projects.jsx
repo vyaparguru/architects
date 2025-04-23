@@ -3,31 +3,31 @@ import Image from "next/image";
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "HOTELS",
+      title: "RESIDENTIAL",
       author: "Kevin Johnson",
       category: "Interior",
       date: "07/02/2017",
       description:
         "Ienean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullam corper ultricies nisi. Nam eget dui.",
-      image: "/hero.jpg", // Replace with actual image path
+      image: "/hero.jpg", 
     },
     {
-      title: "FURNITURE",
+      title: "COMMERCIAL",
       author: "Kevin Johnson",
       category: "Interior",
       date: "07/03/2017",
       description:
         "Nam imperdiet. Etiam ultricies nisi vel augue. Maecenas tempus, tellus eget condimentum rhoncus.",
-      image: "/hos.jpg", // Replace with actual image path
+      image: "/hos.jpg", 
     },
     {
-      title: "BUILDINGS",
+      title: "INSTITUTIONAL",
       author: "Kevin Johnson",
       category: "Interior",
       date: "07/04/2017",
       description:
         "Cenoan imperdiet. Etiam ultricies nisi vel augue. Curabitur ullam corper ultricies nisi. Nam eget dui.",
-      image: "/hero.jpg", // Replace with actual image path
+      image: "/hero.jpg", 
     },
   ];
 

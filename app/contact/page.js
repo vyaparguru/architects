@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="bg-amber-50 text-black">
       {/* Hero Section */}
       <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
-        <div className="absolute inset-0 bg-amber-900 bg-opacity-50 flex items-center justify-center">
+        <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
           <h1 className="text-4xl md:text-6xl text-white font-bold tracking-wide text-center">
             Contact Us
           </h1>
@@ -46,7 +46,7 @@ export default function Contact() {
             <FaEnvelope className="text-4xl text-amber-900 mb-4" />
             <h3 className="text-xl font-semibold text-amber-900">Email</h3>
             <p className="mt-4 text-black">emphasis311@gmail.com</p>
-            <p className="mt-2 text-black">info@emphasis.com</p>
+            <p className="mt-2 text-black">info@emphasisarchitects.com</p>
           </div>
         </div>
       </div>

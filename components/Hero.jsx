@@ -3,9 +3,12 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Navbar from "./Navbar";
 
 export default function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
 
   const closeDrawer = () => {
     setMenuOpen(false);
@@ -18,95 +21,7 @@ export default function Hero() {
         className="w-full md:w-4/5 h-4/5 md:h-full bg-cover bg-center relative"
         style={{ backgroundImage: "url('/hero.jpg')" }}
       >
-        {/* Navbar */}
-        <nav className="absolute top-4 md:left-8 flex items-center space-x-4 md:space-x-8 bg- text-amber-50 text-xl z-10">
-          <Link href="/">
-            <Image
-              src="/logo.png"
-              alt="Icon"
-              width={220}
-              height={48}
-              className="mb-0 cursor-pointer pl-4 md:pl-0"
-            />
-          </Link>
-          <ul className="hidden md:flex space-x-6">
-            <li className="cursor-pointer">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/about">About</Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/services">Services</Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/projects">Projects</Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden absolute top-4 left-80 text-white text-3xl z-20"
-          >
-            {menuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-        </nav>
-
-        {/* Overlay */}
-        {menuOpen && (
-          <div
-            className="fixed inset-0 bg-black bg-opacity-70 z-10"
-            onClick={closeDrawer}
-          ></div>
-        )}
-
-        {/* Mobile Drawer Menu */}
-        <div
-          className={`fixed top-0 left-0 h-full w-3/4 bg-amber-50 text-black transform ${menuOpen ? "translate-x-0" : "-translate-x-full"
-            } transition-transform duration-300 ease-in-out z-20`}
-        >
-          <div className="flex">
-            <Link href="/">
-              <Image
-                src="/logo.png"
-                alt="Icon"
-                width={240}
-                height={48}
-                className="p-4 mb-0 cursor-pointer"
-              />
-            </Link>
-          </div>
-          <ul className="mt-6 space-y-6 px-6 text-2xl">
-            <li className="cursor-pointer">
-              <Link href="/" onClick={closeDrawer}>
-                Home
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/about" onClick={closeDrawer}>
-                About
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/services" onClick={closeDrawer}>
-                Services
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/projects" onClick={closeDrawer}>
-                Projects
-              </Link>
-            </li>
-            <li className="cursor-pointer">
-              <Link href="/contact" onClick={closeDrawer}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+        
       </div>
 
       {/* Right Side Content */}

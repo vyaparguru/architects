@@ -64,7 +64,7 @@ export default function Footer() {
             <FaEnvelope className="mr-2" /> emphasis311@gmail.com
           </p>
           <p className="text-amber-50 flex items-center">
-            <FaEnvelope className="mr-2" /> info@emphasis.com
+            <FaEnvelope className="mr-2" /> info@emphasisarchitects.com
           </p>
         </div>
 
