@@ -14,14 +14,14 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="absolute top-4 md:left-8 flex items-center justify-around md:space-x-16 text-amber-50 text-xl z-10">
+        <nav className="absolute top-4 md:left-8 flex items-center w-full lg:max-w-3xl justify-around gap-24 md:gap-0 md:space-x-16 text-amber-50 text-xl z-10">
             <Link href="/">
                 <Image
                     src="/logo.png"
                     alt="Icon"
                     width={220}
                     height={48}
-                    className="mb-0 cursor-pointer pl-4 md:pl-0"
+                    className="mb-0 cursor-pointer "
                 />
             </Link>
             <ul className="hidden lg:flex space-x-6">
@@ -105,7 +105,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="lg:hidden fixed top-7 right-4 text-white text-3xl z-20"
+                className="lg:hidden text-white text-3xl z-20"
             >
                 {menuOpen ? <FaTimes /> : <FaBars />}
             </button>

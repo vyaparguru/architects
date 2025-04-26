@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-8xl mx-auto px-6 md:px-12 lg:px-28 grid md:grid-cols-3 gap-16">
         {/* Logo & About */}
         <div>
-          <Image src="/logo.png" alt="logo" width={200} height={50} />
+          <Image src="/footerlogo.png" alt="logo" width={90} height={10} />
           <p className="mt-4 text-md font-light leading-relaxed">
             We are a leading organization dedicated to providing excellent services in various fields.
           </p>
