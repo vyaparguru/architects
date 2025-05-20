@@ -7,10 +7,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-amber-50 pt-16 pb-2">
-      <div className="max-w-8xl mx-auto px-6 md:px-12 lg:px-28 grid md:grid-cols-3 gap-16">
+      <div className="max-w-8xl mx-auto px-6 md:px-12 lg:px-24 grid md:grid-cols-3 gap-16">
         {/* Logo & About */}
         <div>
-          <Image src="/footerlogo.png" alt="logo" width={90} height={10} />
+          <Image src="/logo.png" alt="logo" width={180} height={20} className="bg-white"/>
           <p className="mt-4 text-md font-light leading-relaxed">
             We are a leading organization dedicated to providing excellent services in various fields.
           </p>
@@ -57,7 +57,7 @@ export default function Footer() {
           <p className="mt-2 text-amber-50 flex items-center">
             <FaClock className="mr-2" /> Working Hours: 10:00 AM - 6:30 PM
           </p>
-          <p className="mt-2 text-amber-50 flex items-center">
+          <p className="text-amber-50 flex items-center">
             <FaPhoneAlt className="mr-2" /> +91-97805-00608
           </p>
           <p className="text-amber-50 flex items-center">

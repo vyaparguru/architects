@@ -85,7 +85,7 @@ export default function About() {
             At Emphasis Architects, every project is a blend of creativity, craftsmanship, and heart. Whether you’re building your dream home, reimagining a commercial space, or creating a legacy project, we are here to turn your vision into reality.
           </p>
           <Link href="/contact">
-          <button className="mt-6 px-7 py-4 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
+          <button className="mt-6 px-7 py-4 md:pt-4 md:pb-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
             Contact Us
           </button>
           </Link>

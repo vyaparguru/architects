@@ -34,7 +34,7 @@ export default function Hero() {
             height={60}
             className="mb-4"
           />
-          <h1 className="text-4xl md:text-5xl md:font-light tracking-widest">
+          <h1 className="text-4xl md:text-5xl md:font-bold tracking-widest">
             HOUSE OF THE FUTURE
           </h1>
           <p className="mt-4 text-md md:text-lg">
@@ -42,7 +42,7 @@ export default function Hero() {
             residences.
           </p>
           <Link href="/services">
-            <button className="mt-6 px-10 py-4 md:px-9 md:py-4 border-white cursor-pointer border-2 text-md font-normal tracking-widest bg-white text-black rounded-full hover:bg-black hover:text-white">
+            <button className="mt-6 px-10 py-4 md:px-9 md:pt-5 md:pb-3 border-white cursor-pointer border-2 text-md font-bold tracking-widest bg-white text-black rounded-full hover:bg-black hover:text-white">
               VIEW MORE
             </button>
           </Link>

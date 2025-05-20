@@ -17,14 +17,10 @@ export default function Third() {
       {/* R Content (Text Section) */}
       <div className="w-full md:w-2/5 h-3/5 md:h-full bg-amber-50 text-black flex flex-col justify-center items-start p-6 md:p-12 md:px-10">
         <h2 className="text-4xl md:font-light tracking-widest">
-          HARMONY OF SHAPES
+          CRAFTED TO LAST
         </h2>
         <p className="mt-4 text-lg md:text-xl font-light leading-relaxed">
-          At Emphasis, we believe that interior design is an art of balance,
-          where shapes, forms, and proportions come together to create a
-          seamless and functional space. Our approach focuses on harmonizing
-          geometric and organic elements to enhance aesthetics while ensuring
-          practicality.
+        Where vision meets structure — our construction service is the backbone of every great design. With precision engineering and timeless craftsmanship, we transform blueprints into reality, brick by brick, beam by beam.
         </p>
 
         {/* Button */}

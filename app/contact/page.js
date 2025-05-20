@@ -17,7 +17,7 @@ export default function Contact() {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
-        setErrors({ ...errors, [name]: "" }); // Clear error on input change
+        setErrors({ ...errors, [name]: "" });
     };
 
     const validateForm = () => {
@@ -107,83 +107,13 @@ export default function Contact() {
                         Reach out to us for any inquiries or to start your journey with Emphasis Architects.
                     </p>
                     {/* Contact Form */}
-                    <div className="py-16">
-                        <div className="max-w-7xl mx-auto">
-                            <form
-                                className="grid grid-cols-1 md:grid-cols-2 gap-6"
-                                onSubmit={handleSubmit}
-                            >
-                                {/* Name */}
-                                <div className="flex flex-col">
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        className="mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
-                                        placeholder="Enter your name"
-                                        value={formData.name}
-                                        onChange={handleInputChange}
-                                    />
-                                    {errors.name && <p className="flex items-start text-red-500 text-sm mt-1">{errors.name}</p>}
-                                </div>
-
-                                {/* Contact Number */}
-                                <div className="flex flex-col">
-                                    <input
-                                        type="text"
-                                        id="contact"
-                                        name="contact"
-                                        className="mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
-                                        placeholder="Enter your contact number"
-                                        value={formData.contact}
-                                        onChange={handleInputChange}
-                                        onKeyPress={(e) => {
-                                            if (!/[0-9]/.test(e.key)) {
-                                                e.preventDefault(); 
-                                            }
-                                        }}
-                                    />
-                                    {errors.contact && <p className="flex items-start text-red-500 text-sm mt-1">{errors.contact}</p>}
-                                </div>
-                                {/* Email */}
-                                <div className="flex flex-col">
-                                    <input
-                                        type="text" 
-                                        id="email"
-                                        name="email"
-                                        className="mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
-                                        placeholder="Enter your email"
-                                        value={formData.email}
-                                        onChange={handleInputChange}
-                                    />
-                                    {errors.email && <p className="flex items-start text-red-500 text-sm mt-1">{errors.email}</p>}
-                                </div>
-
-                                {/* Message */}
-                                <div className="flex flex-col md:col-span-2">
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        className="mt-2 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-black"
-                                        placeholder="Enter your message"
-                                        rows="5"
-                                        value={formData.message}
-                                        onChange={handleInputChange}
-                                    ></textarea>
-                                    {errors.message && <p className="flex items-start text-red-500 text-sm mt-1">{errors.message}</p>}
-                                </div>
-
-                                {/* Submit Button */}
-                                <div className="md:col-span-2 text-center">
-                                    <button
-                                        type="submit"
-                                        className="mt-4 px-7 py-4 bg-black border-2 border-black hover:bg-amber-50 hover:text-black text-white rounded-full text-lg"
-                                    >
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+                    <div className="mt-8 max-w-screen-5xl">
+                    <iframe 
+                    aria-label='Contact Us' 
+                    frameBorder="0" 
+                    style={{height:"1000px",width:"100%",border:"none"}}
+                    src='https://forms.zohopublic.in/tamannaemphasisa1/form/ContactEmphasis/formperma/byJ4RFzuWXY0GraSxOl1RRu7ruskEfOfyUQ6id97kJ4'>
+                    </iframe>
                     </div>
                 </div>
             </div>

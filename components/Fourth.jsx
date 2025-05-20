@@ -19,17 +19,17 @@ export default function Fourth() {
           OUR TEAM
         </h2>
         <p className="mt-2 text-lg md:text-xl font-extralight leading-relaxed">
-        Ked ai repspiciatic onpe umnis iste natus errorsit voluptatem uocusantium naius erpor sit vulup taton accus antium.
+        Our team is a passionate group of individuals dedicated to driving meaningful change. With diverse backgrounds and a shared commitment to our mission, we work together to create a lasting impact in the communities we serve.
         </p>
         </div>
-        <div>
+        {/* <div>
         <h2 className="text-3xl md:text-4xl md:font-extralight tracking-widest uppercase">
           NEW Projects
         </h2>
         <p className="mt-2 text-lg md:text-xl font-extralight leading-relaxed">
         Ked ai repspiciatic onpe umnis iste natus errorsit voluptatem uocusantium naius erpor sit vulup taton accus antium.
         </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Right Content (Image Section) */}

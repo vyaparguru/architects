@@ -38,22 +38,22 @@ export default function Navbar() {
                 >
                     <span>Services</span>
                     {servicesOpen && (
-                        <ul className="absolute top-full left-0 bg-white text-black shadow-md rounded-md mt-2 space-y-4 p-4 w-56">
+                        <ul className="absolute top-full left-0 bg-white text-black shadow-md rounded-md mt-0 space-y-4 p-4 w-56">
                             <li>
-                                <Link href="/services/architecture" className="hover:underline">
+                                <Link href="/" className="hover:underline">
                                     Architecture
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/services/interior-designing"
+                                    href="/"
                                     className="hover:underline"
                                 >
                                     Interior Designing
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/services/construction" className="hover:underline">
+                                <Link href="/" className="hover:underline">
                                     Construction
                                 </Link>
                             </li>
@@ -67,30 +67,30 @@ export default function Navbar() {
                 >
                     <span>Projects</span>
                     {projectsOpen && (
-                        <ul className="absolute top-full left-0 bg-white text-black shadow-md rounded-md mt-2 space-y-4 p-4 w-56">
+                        <ul className="absolute top-full left-0 bg-white text-black shadow-md rounded-md mt-0 space-y-4 p-4 w-56">
                             <li>
                                 <Link
-                                    href="/projects/residential"
+                                    href="/"
                                     className="hover:underline"
                                 >
                                     Residential Projects
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/projects/commercial" className="hover:underline">
+                                <Link href="/" className="hover:underline">
                                     Commercial Projects
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/projects/institutional"
+                                    href="/"
                                     className="hover:underline"
                                 >
                                     Institutional Projects
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/projects/religious" className="hover:underline">
+                                <Link href="/" className="hover:underline">
                                     Religious Projects
                                 </Link>
                             </li>
@@ -101,7 +101,6 @@ export default function Navbar() {
                     <Link href="/contact">Contact us</Link>
                 </li>
             </ul>
-            {/* Mobile Menu Button */}
             {/* Mobile Menu Button */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
