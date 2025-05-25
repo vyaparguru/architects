@@ -40,7 +40,7 @@ export default function Navbar() {
                     {servicesOpen && (
                         <ul className="absolute top-full left-0 bg-white text-black shadow-md rounded-md mt-0 space-y-4 p-4 w-56">
                             <li>
-                                <Link href="/" className="hover:underline">
+                                <Link href="/services/architecture" className="hover:underline">
                                     Architecture
                                 </Link>
                             </li>
