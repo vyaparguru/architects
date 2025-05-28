@@ -36,8 +36,8 @@ export default function Navbar() {
                     onMouseEnter={() => setServicesOpen(true)}
                     onMouseLeave={() => setServicesOpen(false)}
                 >
-                    <span>Services</span>
-                    {servicesOpen && (
+                    <Link href="/services">Services</Link>
+                    {/* {servicesOpen && (
                         <ul className="absolute top-full left-0 bg-white text-black shadow-md rounded-md mt-0 space-y-4 p-4 w-56">
                             <li>
                                 <Link href="/services/architecture" className="hover:underline">
@@ -58,15 +58,15 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
                 <li
                     className="cursor-pointer relative"
                     onMouseEnter={() => setProjectsOpen(true)}
                     onMouseLeave={() => setProjectsOpen(false)}
                 >
-                    <span>Projects</span>
-                    {projectsOpen && (
+                    <Link href="/projects">Projects</Link>
+                    {/* {projectsOpen && (
                         <ul className="absolute top-full left-0 bg-white text-black shadow-md rounded-md mt-0 space-y-4 p-4 w-56">
                             <li>
                                 <Link
@@ -95,7 +95,7 @@ export default function Navbar() {
                                 </Link>
                             </li>
                         </ul>
-                    )}
+                    )} */}
                 </li>
                 <li className="cursor-pointer">
                     <Link href="/contact">Contact us</Link>
@@ -152,7 +152,7 @@ export default function Navbar() {
                             <span>Services</span>
                             <span>{servicesOpen ? "-" : "+"}</span>
                         </div>
-                        {servicesOpen && (
+                        {/* {servicesOpen && (
                             <ul className="mt-2 space-y-2 pl-4 text-lg">
                                 <li>
                                     <Link
@@ -179,7 +179,7 @@ export default function Navbar() {
                                     </Link>
                                 </li>
                             </ul>
-                        )}
+                        )} */}
                     </li>
                     <li className="cursor-pointer">
                         <div
@@ -189,7 +189,7 @@ export default function Navbar() {
                             <span>Projects</span>
                             <span>{projectsOpen ? "-" : "+"}</span>
                         </div>
-                        {projectsOpen && (
+                        {/* {projectsOpen && (
                             <ul className="mt-2 space-y-2 pl-4 text-lg">
                                 <li>
                                     <Link
@@ -224,7 +224,7 @@ export default function Navbar() {
                                     </Link>
                                 </li>
                             </ul>
-                        )}
+                        )} */}
                     </li>
                     <li className="cursor-pointer">
                         <Link href="/contact" onClick={closeDrawer}>

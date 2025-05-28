@@ -1,4 +1,5 @@
-// components/OurServices.tsx
+import Link from "next/link";
+
 export default function OurServices() {
   const services = [
     {
@@ -6,18 +7,21 @@ export default function OurServices() {
       image: "/archi/7.jpg",
       description:
         "We craft modern, functional architecture tailored to your needs and vision.",
+      href: "/services/architecture",
     },
     {
       title: "Interior Design",
       image: "/int/1.jpg",
       description:
         "Our interiors combine beauty and utility, creating personalized spaces.",
+      href: "/services/interior-design",
     },
     {
       title: "Construction Management",
       image: "/const/1.webp",
       description:
         "Efficient layouts that maximize space and enhance workflow and comfort.",
+      href: "/services/construction-management",
     },
   ];
 
@@ -46,9 +50,9 @@ export default function OurServices() {
                 {service.title}
               </h3>
               <p className="text-gray-600 mt-2">{service.description}</p>
-              <button className="mt-4 text-sm text-gray-900  font-bold hover:underline">
+              <Link href={service.href} className="mt-4 text-sm text-gray-900  font-bold hover:underline">
                 View service →
-              </button>
+              </Link>
             </div>
           </div>
         ))}
