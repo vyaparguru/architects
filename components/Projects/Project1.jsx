@@ -7,7 +7,7 @@ export default function Project1() {
             <div className="md:w-1/2 w-full">
                 <div className="h-[200px] md:h-[400px] w-full relative">
                     <Image
-                        src="/4.jpg"
+                        src="/projects/1.jpg"
                         alt="aurora abode"
                         fill
                         className="object-cover"

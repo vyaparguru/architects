@@ -7,7 +7,7 @@ export default function Project5() {
             <div className="md:w-1/2 w-full">
                 <div className="h-[200px] md:h-[400px] w-full relative">
                     <Image
-                        src="/4.jpg"
+                        // src="/4.jpg"
                         alt="the glass house"
                         fill
                         className="object-cover"
