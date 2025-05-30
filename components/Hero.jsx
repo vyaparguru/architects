@@ -19,7 +19,7 @@ export default function Hero() {
       {/* Background Image */}
       <div
         className="w-full md:w-4/5 h-4/5 md:h-full bg-cover bg-center relative"
-        style={{ backgroundImage: "url('/hero.jpg')" }}
+        style={{ backgroundImage: "url('/4.jpg')" }}
       >
         
       </div>

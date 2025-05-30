@@ -35,7 +35,7 @@ export default function Fourth() {
       {/* Right Content (Image Section) */}
       <div className="w-full md:w-4/5 h-2/5 md:h-full bg-cover bg-center relative">
         <Image
-          src="/4.jpg" // Replace with your actual image path
+          src="/hero.jpg" // Replace with your actual image path
           alt="Harmony of Shapes"
           width={1200}
           height={800}

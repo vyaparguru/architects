@@ -149,8 +149,10 @@ export default function Navbar() {
                             onClick={() => setServicesOpen(!servicesOpen)}
                             className="flex justify-between items-center"
                         >
-                            <span>Services</span>
-                            <span>{servicesOpen ? "-" : "+"}</span>
+                            <Link href="/services" onClick={closeDrawer}>
+                                Services
+                            </Link>
+                            {/* <span>{servicesOpen ? "-" : "+"}</span> */}
                         </div>
                         {/* {servicesOpen && (
                             <ul className="mt-2 space-y-2 pl-4 text-lg">
@@ -186,8 +188,10 @@ export default function Navbar() {
                             onClick={() => setProjectsOpen(!projectsOpen)}
                             className="flex justify-between items-center"
                         >
-                            <span>Projects</span>
-                            <span>{projectsOpen ? "-" : "+"}</span>
+                            <Link href="/projects" onClick={closeDrawer}>
+                                Projects
+                            </Link>
+                            {/* <span>{projectsOpen ? "-" : "+"}</span> */}
                         </div>
                         {/* {projectsOpen && (
                             <ul className="mt-2 space-y-2 pl-4 text-lg">

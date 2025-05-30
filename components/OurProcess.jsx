@@ -38,10 +38,10 @@ export default function ProcessSection() {
   return (
     <section className="bg-amber-50 py-16 px-6 lg:px-16">
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 md:text-center">
+        <h2 className="text-4xl md:text-6xl font-semibold text-gray-800 md:text-center">
           Our Process
         </h2>
-        <p className="text-gray-500 mt-4 max-w-xl mx-auto md:whitespace-nowrap">
+        <p className="text-gray-500 mt-4 max-w-xl mx-auto md:text-center text-xl">
           From the first meeting to final execution, we ensure transparency and excellence at every step.
         </p>
       </div>
@@ -57,7 +57,7 @@ export default function ProcessSection() {
             >
               {step.icon}
             </div>
-            <h4 className="text-md font-medium text-gray-800">
+            <h4 className="text-lg font-medium text-gray-800">
               {step.title}
             </h4>
           </div>

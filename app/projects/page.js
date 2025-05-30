@@ -1,6 +1,6 @@
 "use client"
 
-import ProjectsSection from '@/components/Projects'
+import ProjectsSection from '@/components/HomeProjects'
 import Project1 from '@/components/Projects/Project1'
 import Project10 from '@/components/Projects/Project10'
 import Project11 from '@/components/Projects/Project11'
@@ -19,22 +19,28 @@ export const Projects = () => {
         <>
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
                 <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-4xl md:text-6xl text-white font-bold tracking-wide text-center">
+                    <h1 className="text-4xl md:text-6xl text-white font-semibold tracking-wide text-center">
                         Projects
                     </h1>
                 </div>
             </div>
-            <Project1/>
-            <Project2/>
-            {/* <Project3/> */}
-            {/* <Project4/> */}
-            <Project5/>
-            <Project6/>
-            {/* <Project7/> */}
-            {/* <Project8/> */}
-            {/* <Project9/> */}
-            {/* <Project10/> */}
-            {/* <Project11/> */}
+            <h2 className="text-4xl md:text-6xl font-semibold bg-amber-50 text-gray-900 md:text-center px-6 md:px-0 pt-16">
+                Projects Completed
+            </h2>
+            <Project1 />
+            <Project2 />
+            <Project5 />
+            <Project6 />
+            <h2 className="text-4xl md:text-6xl font-semibold bg-amber-50 text-gray-900 md:text-center px-6 md:px-0 pt-10 ">
+                Ongoing Projects
+            </h2>
+            <Project3 />
+            <Project4 />
+            <Project7 />
+            <Project8 />
+            <Project9 />
+            <Project10 />
+            <Project11 />
         </>
 
     )

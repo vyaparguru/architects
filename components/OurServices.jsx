@@ -28,8 +28,8 @@ export default function OurServices() {
   return (
     <section className="max-w-7xl mx-auto bg-amber-50 py-10 md:py-16 px-6 md:px-8 lg:px-16">
       <div className=" mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 md:text-center">Our Services</h2>
-        <p className="text-gray-500 mt-4 max-w-2xl mx-auto md:whitespace-nowrap">
+        <h2 className="text-4xl md:text-6xl font-bold text-gray-800 md:text-center">Our Services</h2>
+        <p className="text-gray-500 mt-4 max-w-2xl mx-auto md:text-center text-lg">
           We offer a wide range of professional services to bring your vision to life with style and precision.
         </p>
       </div>

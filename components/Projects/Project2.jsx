@@ -16,18 +16,18 @@ export default function Project2() {
                 </div>
             </div>
             <div className="md:w-1/2 w-full flex flex-col gap-2">
-                <h2 className="text-4xl md:font-light tracking-widest text-black">URBAN ARCHES</h2>
+                <h2 className="text-4xl md:font-medium tracking-widest text-black">URBAN ARCHES</h2>
                 <p className="mt-4 text-lg md:text-xl font-light leading-relaxed text-black">
                     At Emphasis, we believe that interior design is an art of balance, where shapes, forms, and proportions come together to create a seamless and functional space. Our approach focuses on harmonizing geometric and organic elements to enhance aesthetics while ensuring practicality.
                 </p>
                 <div className="flex gap-8 mt-2 text-black">
                     <div>
-                        <div className="text-md">Size</div>
-                        <div className="text-lg font-medium">6000 sq.ft</div>
+                        <div className="text-md font-extrabold">Size</div>
+                        <div className="text-md">6000 sq.ft</div>
                     </div>
                     <div>
-                        <div className="text-md">Year Completed</div>
-                        <div className="text-lg font-medium">2024</div>
+                        <div className="text-md font-extrabold">Year Completed</div>
+                        <div className="text-md">2024</div>
                     </div>
                 </div>
                 <Link href="/projects/urban-arches" className="mt-2 text-black w-fit">

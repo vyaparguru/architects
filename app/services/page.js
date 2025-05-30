@@ -32,7 +32,7 @@ export default function ServicePage() {
             <OurProcess />
             <FeaturedProjects />
             {/* <section className="py-12 px-6 bg-gray-100"> */}
-            <h2 className="text-3xl md:text-4xl font-bold py-10 px-6 md:text-center">Gallery</h2>
+            <h2 className="text-4xl md:text-6xl font-bold py-10 px-6 md:text-center">Gallery</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-6xl mx-auto px-6 md:px-0">
                 {galleryImages.map((src, idx) => (
                     <div key={idx} className="overflow-hidden ">
