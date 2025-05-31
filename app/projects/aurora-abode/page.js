@@ -29,9 +29,9 @@ export default function SampleProject() {
                     { src: "/projects/1.jpg", colSpan: 3, height: 64 },
                     { src: "/projects/2.jpg", colSpan: 3, height: 64 },
                     { src: "/projects/3.jpg", colSpan: 2, height: 60 },
-                    { src: "/projects/4.jpg", colSpan: 2, height: 60 },
-                    { src: "/projects/5.jpg", colSpan: 2, height: 60 },
-                    { src: "/projects/6.jpg", colSpan: 6, height: 80 },
+                    { src: "/projects/4.jpg", colSpan: 4, height: 60 },
+                    { src: "/projects/5.jpg", colSpan: 4, height: 60 },
+                    { src: "/projects/6.jpg", colSpan: 2, height: 80 },
                 ]}
                 ctaHeading="Have a query about this project?"
                 ctaDescription="Email us at info@emphasisarchitects.com — we're here to help."

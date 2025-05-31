@@ -79,7 +79,7 @@ export default function ProjectDetails({
 
             <div className=" md:text-center pt-20">
                 <h3 className="text-4xl font-semibold text-black">
-                    Have a query about this project?
+                    Let’s discuss your project today.
                 </h3>
                 <p className="mt-4 text-black">
                     Email us at info@emphasisarchitects.com — we're here to help.
