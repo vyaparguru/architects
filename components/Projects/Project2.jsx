@@ -7,7 +7,7 @@ export default function Project2() {
             <div className="md:w-1/2 w-full">
                 <div className="h-[200px] md:h-[400px] w-full relative">
                     <Image
-                        src="/projects/2.jpg"
+                        src="/projects/2.JPG"
                         alt="urban arches"
                         fill
                         className="object-cover"

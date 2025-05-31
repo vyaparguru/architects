@@ -7,7 +7,7 @@ export default function Project6() {
             <div className="md:w-1/2 w-full">
                 <div className="h-[200px] md:h-[400px] w-full relative">
                     <Image
-                        src="/projects/6.jpg"
+                        src="/projects/6.JPG"
                         alt="roselane manor "
                         fill
                         className="object-cover"

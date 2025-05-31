@@ -9,7 +9,7 @@ export default function HomeProjectsSection() {
       date: "07/02/2017",
       description:
         "We create warm, inviting residential spaces that reflect the lifestyle and personality of every homeowner. With attention to detail and quality craftsmanship, we turn houses into cherished homes.",
-      image: "/residential.jpg", 
+      image: "/residential.JPG", 
     },
     {
       title: "COMMERCIAL",
@@ -27,7 +27,7 @@ export default function HomeProjectsSection() {
       date: "07/04/2017",
       description:
         "Our institutional projects focus on building environments that support learning, growth, and service. From schools to healthcare facilities, we design with purpose and long-term impact in mind.",
-      image: "/institutional.jpg", 
+      image: "/institutional.JPG", 
     },
     {
       title: "RELIGIOUS",
