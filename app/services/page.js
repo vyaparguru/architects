@@ -18,7 +18,6 @@ export default function ServicePage() {
         "/archi/7.jpg",]
     return (
         <div className="bg-amber-50 text-black">
-            {/* Hero Section */}
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/archi/5.jpg')" }}>
                 <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
                     <h1 className="text-4xl md:text-6xl text-white font-bold tracking-wide text-center">
@@ -28,10 +27,8 @@ export default function ServicePage() {
             </div>
             <HeroSection />
             <OurServices/>
-            {/* <Philosophy/> */}
             <OurProcess />
             <FeaturedProjects />
-            {/* <section className="py-12 px-6 bg-gray-100"> */}
             <h2 className="text-4xl md:text-6xl font-bold py-10 px-6 md:text-center">Gallery</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-6xl mx-auto px-6 md:px-0">
                 {galleryImages.map((src, idx) => (
@@ -40,9 +37,7 @@ export default function ServicePage() {
                     </div>
                 ))}
             </div>
-            {/* </section> */}
             <Testimonials />
-            {/* Call to Action */}
             <div className=" md:text-center py-10 px-6 md:px-0">
                 <h3 className="text-4xl font-semibold text-black">
                     Ready to Build Your Vision?

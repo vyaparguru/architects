@@ -1,4 +1,4 @@
-// pages/sample-project.jsx
+"use client"
 import ProjectDetails from "@/components/ProjectDetails";
 
 export default function SampleProject() {
