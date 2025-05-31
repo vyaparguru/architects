@@ -24,14 +24,14 @@ export default function SampleProject() {
                     "The Foyer: A Thoughtful First Impression: Pictured here, the foyer sets the tone for the residence — intimate, inviting, and artfully composed. A neutral palette, offset by forest green accents and soft textures, creates a grounding calm as soon as one steps inside. Wall-mounted typographic frames curated by our in-house styling team add warmth and a sense of personality.",
                     "Details like the custom fluted stools, brass moon sculptures, and layered ceiling lighting bring a boutique-hotel-like charm to the space. Framed glass openings ensure the space feels connected, without compromising privacy. Every element, from the accent tables to the subtle shadow lines in the ceiling, was executed exactly as drawn — a testament to on-site precision and coordinated execution."
                 ]}
-                mainImage="/projects/1.jpg"
+                mainImage="/projects/1.JPG"
                 galleryImages={[
-                    { src: "/projects/1.jpg", colSpan: 3, height: 64 },
-                    { src: "/projects/2.jpg", colSpan: 3, height: 64 },
+                    { src: "/projects/1.JPG", colSpan: 3, height: 64 },
+                    { src: "/projects/2.JPG", colSpan: 3, height: 64 },
                     { src: "/projects/3.jpg", colSpan: 2, height: 60 },
                     { src: "/projects/4.jpg", colSpan: 4, height: 60 },
                     { src: "/projects/5.jpg", colSpan: 4, height: 60 },
-                    { src: "/projects/6.jpg", colSpan: 2, height: 80 },
+                    { src: "/projects/6.JPG", colSpan: 2, height: 80 },
                 ]}
                 ctaHeading="Have a query about this project?"
                 ctaDescription="Email us at info@emphasisarchitects.com — we're here to help."
