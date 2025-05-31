@@ -63,12 +63,24 @@ export default function ProjectDetails({
                         {galleryImages.map((img, idx) => (
                             <div
                                 key={idx}
-                                className={`
-            col-span-1
-            ${img.colSpan ? `lg:col-span-${img.colSpan}` : "lg:col-span-2"}
-            relative overflow-hidden
-            h-48 sm:h-60 md:h-${img.height || 60}
-          `}
+                                className={[
+                                    "col-span-1",
+                                    img.colSpan === 1 && "lg:col-span-1",
+                                    img.colSpan === 2 && "lg:col-span-2",
+                                    img.colSpan === 3 && "lg:col-span-3",
+                                    img.colSpan === 4 && "lg:col-span-4",
+                                    img.colSpan === 5 && "lg:col-span-5",
+                                    img.colSpan === 6 && "lg:col-span-6",
+                                    "relative",
+                                    "overflow-hidden",
+                                    "h-48",
+                                    "sm:h-60",
+                                    img.height === 48 && "md:h-48",
+                                    img.height === 60 && "md:h-60",
+                                    img.height === 72 && "md:h-72",
+                                    img.height === 80 && "md:h-60",
+                                    "object-cover"
+                                ].filter(Boolean).join(" ")}
                             >
                                 <Image src={img.src} alt={`image${idx + 1}`} fill className="object-cover" />
                             </div>
