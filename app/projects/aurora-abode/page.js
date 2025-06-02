@@ -32,9 +32,9 @@ export default function Aurora() {
                 galleryImages={[
                     { src: "/projects/aurora-abode/1.JPG", colSpan: 2, height: 64 },
                     { src: "/projects/aurora-abode/2.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/aurora-abode/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/aurora-abode/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/aurora-abode/5.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/aurora-abode/3.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/aurora-abode/4.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/aurora-abode/5.JPG", colSpan: 2, height: 64 },
                     { src: "/projects/aurora-abode/6.JPG", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[300px]"

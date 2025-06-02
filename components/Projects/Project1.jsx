@@ -5,7 +5,7 @@ export default function Project1() {
     return (
         <section className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-48 py-16 md:py-20 bg-amber-50">
             <div className="md:w-1/2 w-full">
-                <div className="h-[200px] md:h-[400px] w-full relative">
+                <div className="h-[200px] md:h-[340px] w-full relative">
                     <Image
                         src="/projects/1.JPG"
                         alt="aurora abode"

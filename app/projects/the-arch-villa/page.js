@@ -1,7 +1,7 @@
 "use client"
 import ProjectDetails from "@/components/ProjectDetails";
 
-export default function Aurora() {
+export default function Villa() {
     return (
         <>
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
@@ -25,12 +25,12 @@ export default function Aurora() {
                 ]}
                 mainImage="/projects/6.JPG"
                 galleryImages={[
-                    { src: "/projects/the-arch-villa/1.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-villa/2.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-arch-villa/1.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/the-arch-villa/2.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-arch-villa/3.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-arch-villa/4.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-arch-villa/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-villa/6.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-arch-villa/6.jpg", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[310px]"
             />

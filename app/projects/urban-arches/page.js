@@ -32,9 +32,9 @@ export default function Urban() {
                 galleryImages={[
                     { src: "/projects/urban-arches/1.JPG", colSpan: 2, height: 64 },
                     { src: "/projects/urban-arches/2.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/5.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/urban-arches/3.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/urban-arches/4.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/urban-arches/5.JPG", colSpan: 2, height: 64 },
                     { src: "/projects/urban-arches/6.JPG", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight="h-[200px] md:h-[390px]"

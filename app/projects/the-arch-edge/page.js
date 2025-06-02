@@ -1,7 +1,7 @@
 "use client"
 import ProjectDetails from "@/components/ProjectDetails";
 
-export default function Aurora() {
+export default function Arch() {
     return (
         <>
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
@@ -20,12 +20,12 @@ export default function Aurora() {
                 descriptionBlocks={[]}
                 mainImage="/projects/7.jpg"
                 galleryImages={[
-                    { src: "/projects/the-arch-edge/1.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-edge/2.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-arch-edge/1.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/the-arch-edge/2.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-arch-edge/3.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-arch-edge/4.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-arch-edge/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-edge/6.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-arch-edge/6.jpg", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[400px]"
             />

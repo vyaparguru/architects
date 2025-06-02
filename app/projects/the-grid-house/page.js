@@ -1,7 +1,7 @@
 "use client"
 import ProjectDetails from "@/components/ProjectDetails";
 
-export default function Aurora() {
+export default function Grid() {
     return (
         <>
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
@@ -27,12 +27,12 @@ export default function Aurora() {
                 ]}
                 mainImage="/projects/4.jpg"
                 galleryImages={[
-                    { src: "/projects/the-grid-house/1.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/the-grid-house/2.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-grid-house/1.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/the-grid-house/2.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-grid-house/3.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-grid-house/4.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-grid-house/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-grid-house/6.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-grid-house/6.jpg", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[340px]"
             />

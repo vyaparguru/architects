@@ -1,7 +1,7 @@
 "use client"
 import ProjectDetails from "@/components/ProjectDetails";
 
-export default function Aurora() {
+export default function Imperial() {
     return (
         <>
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
@@ -20,12 +20,12 @@ export default function Aurora() {
                 descriptionBlocks={[]}
                 mainImage="/projects/9.jpg"
                 galleryImages={[
-                    { src: "/projects/imperial-lines/1.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/imperial-lines/2.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/imperial-lines/1.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/imperial-lines/2.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/imperial-lines/3.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/imperial-lines/4.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/imperial-lines/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/imperial-lines/6.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/imperial-lines/6.jpg", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[400px]"
             />

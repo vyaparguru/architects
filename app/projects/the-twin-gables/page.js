@@ -1,7 +1,7 @@
 "use client"
 import ProjectDetails from "@/components/ProjectDetails";
 
-export default function Aurora() {
+export default function Gables() {
     return (
         <>
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
@@ -20,12 +20,12 @@ export default function Aurora() {
                 descriptionBlocks={[]}
                 mainImage="/projects/8.jpg"
                 galleryImages={[
-                    { src: "/projects/the-twin-gables/1.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/the-twin-gables/2.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-twin-gables/1.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/the-twin-gables/2.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-twin-gables/3.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-twin-gables/4.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/the-twin-gables/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-twin-gables/6.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/the-twin-gables/6.jpg", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[400px]"
             />

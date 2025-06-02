@@ -1,7 +1,7 @@
 "use client"
 import ProjectDetails from "@/components/ProjectDetails";
 
-export default function Aurora() {
+export default function Roselane() {
     return (
         <>
             <div className="relative bg-cover bg-center h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
@@ -20,12 +20,12 @@ export default function Aurora() {
                 descriptionBlocks={[]}
                 mainImage="/projects/6.JPG"
                 galleryImages={[
-                    { src: "/projects/roselane-manor/1.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/roselane-manor/2.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/roselane-manor/1.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/roselane-manor/2.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/roselane-manor/3.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/roselane-manor/4.jpg", colSpan: 2, height: 64 },
                     { src: "/projects/roselane-manor/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/roselane-manor/6.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/roselane-manor/6.jpg", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[340px]"
             />
