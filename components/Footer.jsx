@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="max-w-8xl mx-auto px-6 md:px-12 lg:px-24 grid md:grid-cols-3 gap-16">
         {/* Logo & About */}
         <div>
-          <Image src="/logo.png" alt="logo" width={180} height={20} className="bg-white"/>
+          <Image src="/logo.png" alt="logo" width={180} height={20} className="bg-white" />
           <p className="mt-4 text-md font-light leading-relaxed">
             We are a leading organization dedicated to providing excellent services in various fields.
           </p>
@@ -74,7 +74,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2">
             {["Home", "About", "Services", "Projects", "Contact"].map((link) => (
               <li key={link}>
-                <Link href={`/${link.toLowerCase()}`} >
+                <Link href={link === "Home" ? "/" : `/${link.toLowerCase()}`}>
                   {link}
                 </Link>
               </li>

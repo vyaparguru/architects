@@ -11,6 +11,7 @@ export default function ProjectDetails({
     descriptionBlocks,
     mainImage,
     galleryImages,
+    mainImageHeight
 }) {
     return (
         <div className="max-w-screen bg-amber-50 mx-auto px-6 md:px-48 py-16 md:py-20">
@@ -23,12 +24,18 @@ export default function ProjectDetails({
                             <p><span className="font-extrabold">Size:</span> {size}</p>
                             <p><span className="font-extrabold">Year Completed:</span> {year}</p>
                         </div>
-                        <p className=" text-lg font-light leading-relaxed text-black">{intro}</p>
+                        {Array.isArray(intro) ? (
+                            intro.map((para, idx) => (
+                                <p key={idx} className="text-lg font-light leading-relaxed text-black mb-4">{para}</p>
+                            ))
+                        ) : (
+                            <p className="text-lg font-light leading-relaxed text-black">{intro}</p>
+                        )}
                     </div>
                 </div>
 
                 <div className="lg:w-1/2 w-full">
-                    <div className="relative w-full h-[350px] md:h-[480px] overflow-hidden shadow-lg">
+                    <div className={`relative w-full overflow-hidden shadow-lg ${mainImageHeight}`}>
                         <Image
                             src={mainImage}
                             alt="image1"
@@ -39,7 +46,7 @@ export default function ProjectDetails({
                 </div>
             </div>
 
-            <div className="mt-20 text-lg font-light leading-relaxed text-black">
+            <div className="mt-5 text-lg font-light leading-relaxed text-black">
                 {descriptionBlocks.map((block, idx) => {
                     const headingMatch = block.match(/^(.+?:)\s*(.*)$/);
                     if (headingMatch) {
@@ -47,7 +54,7 @@ export default function ProjectDetails({
                         const rest = headingMatch[2];
                         return (
                             <div key={idx} className="mb-6">
-                                <h4 className="text-4xl font-semibold mb-2">{heading}</h4>
+                                <h4 className="text-4xl font-semibold mb-2 mt-10">{heading}</h4>
                                 <p>{rest}</p>
                             </div>
                         );
@@ -58,7 +65,7 @@ export default function ProjectDetails({
 
             {galleryImages?.length > 0 && (
                 <div className="mt-20">
-                    <h3 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-8 md:text-center">Project Gallery</h3>
+                    {/* <h3 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-8 md:text-center">Project Gallery</h3> */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 md:gap-6">
                         {galleryImages.map((img, idx) => (
                             <div
@@ -97,7 +104,7 @@ export default function ProjectDetails({
                     Email us at info@emphasisarchitects.com — we're here to help.
                 </p>
                 <Link href="/contact">
-                    <button className="mt-6 px-7 pt-4 pb-2 md:pt-4 md:pb-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
+                    <button className="mt-6 px-7 p-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
                         Contact Us
                     </button>
                 </Link>

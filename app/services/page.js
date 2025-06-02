@@ -46,7 +46,7 @@ export default function ServicePage() {
                     Let’s discuss your project today.
                 </p>
                 <Link href="/contact">
-                    <button className="mt-6 px-7 pt-4 pb-2 md:pt-4 md:pb-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
+                    <button className="mt-6 px-7 p-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
                         Start Your Project
                     </button>
                 </Link>

@@ -2,9 +2,9 @@
 import Image from "next/image";
 
 const projects = [
-  { title: "Project 1", image: "/archi/1.jpg" },
-  { title: "Project 2", image: "/archi/2.jpg" },
-  { title: "Project 3", image: "/archi/4.jpg" },
+  { title: "The Glass House", image: "/archi/1.jpg" },
+  { title: "The Grid House", image: "/archi/2.jpg" },
+  { title: "The Arch Villa", image: "/archi/4.jpg" },
 ];
 
 export default function FeaturedProjects() {

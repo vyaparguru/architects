@@ -32,7 +32,7 @@ export default function Project5() {
                     </div>
                 </div>
                 <Link href="/projects/the-glass-house" className="mt-2 text-black w-fit">
-                    <span className="bg-amber-50 border-2 border-black hover:bg-black hover:text-amber-50 text-black px-6 pt-3 pb-2 rounded-full flex items-center gap-2 transition">
+                    <span className="bg-amber-50 border-2 border-black hover:bg-black hover:text-amber-50 text-black px-6 p-3 rounded-full flex items-center gap-2 transition">
                         View Project<span className="text-lg ml-2">➔</span>
                     </span>
                 </Link>
