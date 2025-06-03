@@ -7,7 +7,7 @@ export default function Villa() {
             <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
                 <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
                     <h1 className="text-4xl md:text-6xl text-white font-semibold tracking-wide text-center">
-                        The Arch Villa""
+                        The Arch Villa
                     </h1>
                 </div>
             </div>
@@ -25,12 +25,12 @@ export default function Villa() {
                 ]}
                 mainImage="/projects/6.JPG"
                 galleryImages={[
-                    { src: "/projects/the-arch-villa/1.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-villa/2.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-villa/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-villa/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-villa/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-villa/6.jpg", colSpan: 2, height: 64 },
+                //     { src: "/projects/the-arch-villa/1.jpg", colSpan: 2, height: 64 },
+                //     { src: "/projects/the-arch-villa/2.jpg", colSpan: 2, height: 64 },
+                //     { src: "/projects/the-arch-villa/3.jpg", colSpan: 2, height: 64 },
+                //     { src: "/projects/the-arch-villa/4.jpg", colSpan: 2, height: 64 },
+                //     { src: "/projects/the-arch-villa/5.jpg", colSpan: 2, height: 64 },
+                //     { src: "/projects/the-arch-villa/6.jpg", colSpan: 2, height: 64 },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[310px]"
             />

@@ -3,15 +3,16 @@ import Link from 'next/link'
 
 export default function Project1() {
     return (
-        <section className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-48 py-16 md:py-20 bg-amber-50">
+        <section className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-48 py-16 md:py-24 bg-amber-50">
             <div className="md:w-1/2 w-full">
-                <div className="h-[200px] md:h-[340px] w-full relative">
+                <div className="w-full aspect-[16/9] md:aspect-[16/9] relative">
                     <Image
                         src="/projects/1.JPG"
                         alt="aurora abode"
                         fill
-                        className="object-cover"
+                        className="object-cover object-top rounded-md"
                         sizes="(max-width: 768px) 100vw, 50vw"
+                        priority
                     />
                 </div>
             </div>
@@ -31,7 +32,7 @@ export default function Project1() {
                     </div>
                 </div>
                 <Link href="/projects/aurora-abode" className="mt-2 text-black w-fit">
-                    <span className="bg-amber-50 border-2 border-black hover:bg-black hover:text-amber-50 text-black px-6 p-3 rounded-full flex items-center gap-2 transition">
+                    <span className="bg-amber-50 border-2 border-black hover:bg-black hover:text-amber-50 text-black px-6 pt-3 pb-2 rounded-full flex items-center gap-2 transition">
                         View Project<span className="text-lg ml-2">➔</span>
                     </span>
                 </Link>

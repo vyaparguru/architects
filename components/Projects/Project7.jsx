@@ -3,15 +3,16 @@ import Link from 'next/link'
 
 export default function Project7() {
     return (
-        <section className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-48 py-16 md:py-20 bg-amber-50">
+        <section className="flex flex-col md:flex-row items-center gap-10 px-6 md:px-48 py-16 md:py-24 bg-amber-50">
             <div className="md:w-1/2 w-full">
-                <div className="h-[300px] md:h-[400px] w-full relative">
+                <div className="w-full aspect-[4/3] relative">
                     <Image
                         src="/projects/7.jpg"
-                        alt="the arch edge"
+                        alt="aurora abode"
                         fill
-                        className="object-cover"
+                        className="object-cover object-top rounded-md"
                         sizes="(max-width: 768px) 100vw, 50vw"
+                        priority
                     />
                 </div>
             </div>

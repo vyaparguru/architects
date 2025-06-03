@@ -54,7 +54,7 @@ export default function HomeProjectsSection() {
         {projects.map((project, index) => (
           <div key={index} className="flex flex-col ">
             {/* Project Image */}
-            <div className="w-full h-64 overflow-hidden">
+            <div className="w-full h-64 md:h-96 lg:h-[300px] overflow-hidden">
               <Image
                 src={project.image}
                 alt={project.title}

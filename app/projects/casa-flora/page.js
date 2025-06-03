@@ -20,14 +20,14 @@ export default function Casa() {
                 descriptionBlocks={[]}
                 mainImage="/projects/11.jpg"
                 galleryImages={[
-                    { src: "/projects/casa-flora/1.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/casa-flora/2.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/casa-flora/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/casa-flora/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/casa-flora/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/casa-flora/6.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/casa-flora/1.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/casa-flora/2.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/casa-flora/3.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/casa-flora/4.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/casa-flora/5.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/casa-flora/6.jpg", colSpan: 2, height: 64 },
                 ]}
-                mainImageHeight = "h-[200px] md:h-[400px]"
+                mainImageHeight = "w-full aspect-[5/4] md:aspect-[5/4] relative"
             />
         </>
     );

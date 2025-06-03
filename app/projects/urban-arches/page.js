@@ -30,14 +30,14 @@ export default function Urban() {
                 ]}
                 mainImage="/projects/2.JPG"
                 galleryImages={[
-                    { src: "/projects/urban-arches/1.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/2.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/3.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/4.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/5.JPG", colSpan: 2, height: 64 },
-                    { src: "/projects/urban-arches/6.JPG", colSpan: 2, height: 64 },
+                    { src: "/projects/urban-arches/1.JPG", colSpan: 2, aspect: "16/11" },
+                    { src: "/projects/urban-arches/2.JPG", colSpan: 2, aspect: "16/11" },
+                    { src: "/projects/urban-arches/3.JPG", colSpan: 2, aspect: "16/11" },
+                    { src: "/projects/urban-arches/4.JPG", colSpan: 2, aspect: "16/11" },
+                    { src: "/projects/urban-arches/5.JPG", colSpan: 2, aspect: "16/11" },
+                    { src: "/projects/urban-arches/6.JPG", colSpan: 2, aspect: "16/11" },
                 ]}
-                mainImageHeight="h-[200px] md:h-[390px]"
+                mainImageHeight="w-full aspect-[16/11] md:aspect-[16/11] relative"
             />
         </>
     );

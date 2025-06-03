@@ -20,12 +20,12 @@ export default function Imperial() {
                 descriptionBlocks={[]}
                 mainImage="/projects/9.jpg"
                 galleryImages={[
-                    { src: "/projects/imperial-lines/1.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/imperial-lines/2.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/imperial-lines/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/imperial-lines/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/imperial-lines/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/imperial-lines/6.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/imperial-lines/1.jpg", colSpan: 2, aspect: "5/4" },
+                    { src: "/projects/imperial-lines/2.jpg", colSpan: 2, aspect: "5/4" },
+                    { src: "/projects/imperial-lines/3.jpg", colSpan: 2, aspect: "5/4" },
+                    { src: "/projects/imperial-lines/4.jpg", colSpan: 2, aspect: "5/4" },
+                    { src: "/projects/imperial-lines/5.jpg", colSpan: 2, aspect: "5/4" },
+                    { src: "/projects/imperial-lines/6.jpg", colSpan: 2, aspect: "5/4" },
                 ]}
                 mainImageHeight = "h-[200px] md:h-[400px]"
             />

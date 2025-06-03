@@ -87,7 +87,7 @@ export default function Footer() {
       <div className="mt-8 pt-6 text-center text-sm text-amber-50">
         <p>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
         <p>
-          Developed by{" "}
+          Designed and Developed by{" "}
           <Link
             href="https://vyaparguru.com"
             target="_blank"

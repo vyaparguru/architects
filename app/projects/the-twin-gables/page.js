@@ -20,14 +20,14 @@ export default function Gables() {
                 descriptionBlocks={[]}
                 mainImage="/projects/8.jpg"
                 galleryImages={[
-                    { src: "/projects/the-twin-gables/1.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-twin-gables/2.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-twin-gables/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-twin-gables/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-twin-gables/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-twin-gables/6.jpg", colSpan: 2, height: 64 },
+                    { src: "/projects/the-twin-gables/1.jpg", colSpan: 2, aspect: "16/11"},
+                    { src: "/projects/the-twin-gables/2.jpg", colSpan: 2, aspect: "16/11"},
+                    { src: "/projects/the-twin-gables/3.jpg", colSpan: 2, aspect: "16/11"},
+                    { src: "/projects/the-twin-gables/4.jpg", colSpan: 2, aspect: "16/11"},
+                    { src: "/projects/the-twin-gables/5.jpg", colSpan: 2, aspect: "16/11"},
+                    { src: "/projects/the-twin-gables/6.jpg", colSpan: 2, aspect: "16/11"},
                 ]}
-                mainImageHeight = "h-[200px] md:h-[400px]"
+                mainImageHeight = "w-full aspect-[16/9] md:aspect-[16/9] relative"
             />
         </>
     );

@@ -40,7 +40,7 @@ export default function ProjectDetails({
                             src={mainImage}
                             alt="image1"
                             fill
-                            className="object-cover"
+                            className="object-cover rounded-md"
                         />
                     </div>
                 </div>
@@ -66,7 +66,7 @@ export default function ProjectDetails({
             {galleryImages?.length > 0 && (
                 <div className="mt-20">
                     {/* <h3 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-8 md:text-center">Project Gallery</h3> */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 md:gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 ">
                         {galleryImages.map((img, idx) => (
                             <div
                                 key={idx}
@@ -80,16 +80,15 @@ export default function ProjectDetails({
                                     img.colSpan === 6 && "lg:col-span-6",
                                     "relative",
                                     "overflow-hidden",
-                                    "h-48",
-                                    "sm:h-60",
-                                    img.height === 48 && "md:h-48",
-                                    img.height === 60 && "md:h-60",
-                                    img.height === 72 && "md:h-72",
-                                    img.height === 80 && "md:h-60",
-                                    "object-cover"
+                                    img.aspect ? `aspect-[${img.aspect}]` : "aspect-[4/3]",
                                 ].filter(Boolean).join(" ")}
                             >
-                                <Image src={img.src} alt={`image${idx + 1}`} fill className="object-cover" />
+                                <Image
+                                    src={img.src}
+                                    alt={`image${idx + 1}`}
+                                    fill
+                                    className="object-cover object-center rounded-md"
+                                />
                             </div>
                         ))}
                     </div>

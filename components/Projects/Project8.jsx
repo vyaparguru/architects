@@ -3,17 +3,18 @@ import Link from 'next/link'
 
 export default function Project8() {
     return (
-        <section className="flex flex-col md:flex-row-reverse items-center gap-10 px-6 md:px-48 py-16 md:py-20 bg-amber-50">
+        <section className="flex flex-col md:flex-row-reverse items-center gap-10 px-6 md:px-48 py-16 md:py-24 bg-amber-50">
             <div className="md:w-1/2 w-full">
-                <div className="h-[250px] md:h-[400px] w-full relative">
-                    <Image
-                        src="/projects/8.jpg"
-                        alt="the twin gables"
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                </div>
+                <div className="w-full aspect-[3/2] md:aspect-[3/2] relative">
+                                    <Image
+                                        src="/projects/8.jpg"
+                                        alt="aurora abode"
+                                        fill
+                                        className="object-cover object-top rounded-md"
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        priority
+                                    />
+                                </div>
             </div>
             <div className="md:w-1/2 w-full flex flex-col gap-2">
                 <h2 className="text-4xl md:font-medium tracking-widest text-black uppercase">the twin gables</h2>

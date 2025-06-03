@@ -20,14 +20,14 @@ export default function Arch() {
                 descriptionBlocks={[]}
                 mainImage="/projects/7.jpg"
                 galleryImages={[
-                    { src: "/projects/the-arch-edge/1.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-edge/2.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-edge/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-edge/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-edge/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-arch-edge/6.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-arch-edge/1.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-arch-edge/2.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-arch-edge/3.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-arch-edge/4.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-arch-edge/5.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-arch-edge/6.jpg", colSpan: 2, height: 64 },
                 ]}
-                mainImageHeight = "h-[200px] md:h-[400px]"
+                mainImageHeight = "w-full aspect-[4/3] md:aspect-[4/3] relative"
             />
         </>
     );

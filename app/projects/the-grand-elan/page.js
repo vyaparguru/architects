@@ -12,7 +12,7 @@ export default function Elan() {
                 </div>
             </div>
             <ProjectDetails
-                title="The Grand ELan"
+                title="The Grand Elan"
                 category="Residential"
                 size="7000 sq.ft"
                 year="Site Under Process Lanter Stage"
@@ -20,14 +20,14 @@ export default function Elan() {
                 descriptionBlocks={[]}
                 mainImage="/projects/10.jpg"
                 galleryImages={[
-                    { src: "/projects/the-grand-elan/1.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-grand-elan/2.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-grand-elan/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-grand-elan/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-grand-elan/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-grand-elan/6.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-grand-elan/1.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-grand-elan/2.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-grand-elan/3.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-grand-elan/4.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-grand-elan/5.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-grand-elan/6.jpg", colSpan: 2, height: 64 },
                 ]}
-                mainImageHeight = "h-[200px] md:h-[500px]"
+                mainImageHeight = "w-full aspect-[7/6] md:aspect-[7/6] relative"
             />
         </>
     );

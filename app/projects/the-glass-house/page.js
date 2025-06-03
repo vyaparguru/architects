@@ -27,14 +27,14 @@ export default function Glass() {
                 ]}
                 mainImage="/projects/5.jpg"
                 galleryImages={[
-                    { src: "/projects/the-glass-house/1.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-glass-house/2.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-glass-house/3.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-glass-house/4.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-glass-house/5.jpg", colSpan: 2, height: 64 },
-                    { src: "/projects/the-glass-house/6.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-glass-house/1.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-glass-house/2.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-glass-house/3.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-glass-house/4.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-glass-house/5.jpg", colSpan: 2, height: 64 },
+                    // { src: "/projects/the-glass-house/6.jpg", colSpan: 2, height: 64 },
                 ]}
-                mainImageHeight = "h-[200px] md:h-[340px]"
+                mainImageHeight = "w-full aspect-[16/9] md:aspect-[16/9] relative"
             />
         </>
     );
