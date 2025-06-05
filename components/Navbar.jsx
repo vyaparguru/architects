@@ -14,7 +14,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="absolute top-4 md:left-8 flex items-center w-full lg:max-w-3xl justify-around gap-24 md:gap-0 md:space-x-16 text-amber-50 text-xl z-10">
+        <nav className="fixed top-0 left-0 w-full bg-white flex items-center text-black text-xl shadow-lg justify-between px-4 md:px-10 py-3 z-[9999]">
             <Link href="/">
                 <Image
                     src="/logo.png"
@@ -104,7 +104,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="lg:hidden text-white text-3xl z-20"
+                className="lg:hidden text-black text-3xl z-20"
             >
                 {menuOpen ? <FaTimes /> : <FaBars />}
             </button>

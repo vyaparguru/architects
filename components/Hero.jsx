@@ -15,24 +15,24 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative h-[100vh] md:h-[85vh] w-full flex flex-col md:flex-row">
+    <div className="relative h-[90vh] md:h-[85vh] w-full flex flex-col md:flex-row mt-20 md:mt-20">
       {/* Background Image */}
       <div
         className="w-full md:w-4/5 h-4/5 md:h-full bg-cover bg-center relative"
-        style={{ backgroundImage: "url('/4.jpg')" }}
+        style={{ backgroundImage: "url('/hero.jpg')" }}
       >
         
       </div>
 
       {/* Right Side Content */}
-      <div className="w-full md:w-2/5 md:h-full bg-black text-amber-50 flex flex-col justify-center items-center py-16 px-6 md:p-12 md:px-20">
+      <div className="w-full md:w-2/5 md:h-full bg-black text-white flex flex-col justify-center items-center py-16 px-6 md:p-12 md:px-20">
         <div className="text-left">
           <Image
             src="/logo2.png"
             alt="Icon"
             width={58}
             height={60}
-            className="mb-4"
+            className="mx-auto"
           />
           <h1 className="text-4xl md:text-5xl md:font-bold tracking-widest">
             HOUSE OF THE FUTURE

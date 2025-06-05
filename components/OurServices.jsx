@@ -26,7 +26,7 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto bg-amber-50 py-0 md:py-16 px-6 md:px-8 lg:px-16">
+    <section className="max-w-7xl mx-auto bg-white py-0 md:py-16 px-6 md:px-8 lg:px-16">
       <div className=" mb-12">
         <h2 className="text-4xl md:text-6xl font-bold text-gray-800 md:text-center">Our Services</h2>
         <p className="text-gray-500 mt-4 max-w-2xl mx-auto md:text-center text-lg">
@@ -38,7 +38,7 @@ export default function OurServices() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+            className="bg-white overflow-hidden shadow-lg "
           >
             <img
               src={service.image}

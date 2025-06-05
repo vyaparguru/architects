@@ -29,16 +29,16 @@ export default function HomeProjectsSection() {
         "Our institutional projects focus on building environments that support learning, growth, and service. From schools to healthcare facilities, we design with purpose and long-term impact in mind.",
       image: "/institutional.JPG", 
     },
-    {
-      title: "RELIGIOUS",
-      description:
-        "We design and develop sacred spaces that inspire peace, reflection, and community. With respect for tradition and attention to spiritual significance, our work honors the values and vision of every faith-based project.",
-      image: "/religious.jpg", 
-    },
+    // {
+    //   title: "RELIGIOUS",
+    //   description:
+    //     "We design and develop sacred spaces that inspire peace, reflection, and community. With respect for tradition and attention to spiritual significance, our work honors the values and vision of every faith-based project.",
+    //   image: "/religious.jpg", 
+    // },
   ];
 
   return (
-    <section className="max-w-full mx-auto px-6 md:px-12 lg:px-24 py-16 md:py-24 bg-amber-50 text-gray-900">
+    <section className="max-w-full mx-auto px-6 md:px-12 lg:px-24 py-16 md:py-24 bg-white text-gray-900">
       {/* Heading */}
       <h2 className="text-4xl md:text-6xl md:text-center">
         ARCHITECTURE PROJECTS

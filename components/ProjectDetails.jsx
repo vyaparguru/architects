@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ProjectDetails({
     title,
@@ -13,6 +14,26 @@ export default function ProjectDetails({
     galleryImages,
     mainImageHeight
 }) {
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [lightboxIndex, setLightboxIndex] = useState(0);
+
+    const openLightbox = (idx) => {
+        setLightboxIndex(idx);
+        setLightboxOpen(true);
+    };
+
+    const closeLightbox = () => setLightboxOpen(false);
+
+    const prevImage = (e) => {
+        e.stopPropagation();
+        setLightboxIndex((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
+    };
+
+    const nextImage = (e) => {
+        e.stopPropagation();
+        setLightboxIndex((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
+    };
+
     return (
         <div className="max-w-screen bg-amber-50 mx-auto px-6 md:px-48 py-16 md:py-20">
             <div className="flex flex-col lg:flex-row gap-10">
@@ -65,7 +86,6 @@ export default function ProjectDetails({
 
             {galleryImages?.length > 0 && (
                 <div className="mt-20">
-                    {/* <h3 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-8 md:text-center">Project Gallery</h3> */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 ">
                         {galleryImages.map((img, idx) => (
                             <div
@@ -81,7 +101,12 @@ export default function ProjectDetails({
                                     "relative",
                                     "overflow-hidden",
                                     img.aspect ? `aspect-[${img.aspect}]` : "aspect-[4/3]",
+                                    "cursor-pointer"
                                 ].filter(Boolean).join(" ")}
+                                onClick={() => openLightbox(idx)}
+                                tabIndex={0}
+                                role="button"
+                                aria-label="Open image in large view"
                             >
                                 <Image
                                     src={img.src}
@@ -92,6 +117,45 @@ export default function ProjectDetails({
                             </div>
                         ))}
                     </div>
+                </div>
+            )}
+
+            {/* Lightbox Modal */}
+            {lightboxOpen && (
+                <div
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+                    onClick={closeLightbox}
+                >
+                    <button
+                        className="absolute top-6 right-8 text-white text-4xl font-bold z-50"
+                        onClick={closeLightbox}
+                        aria-label="Close"
+                    >
+                        &times;
+                    </button>
+                    <button
+                        className="absolute left-4 md:left-16 text-white text-3xl font-bold z-50 px-2 py-1 pb-3 bg-black/40 rounded-full"
+                        onClick={prevImage}
+                        aria-label="Previous image"
+                    >
+                        &#8592;
+                    </button>
+                    <div className="relative w-[90vw] h-[70vh] max-w-4xl flex items-center justify-center">
+                        <Image
+                            src={galleryImages[lightboxIndex].src}
+                            alt={`Large image ${lightboxIndex + 1}`}
+                            fill
+                            className="object-contain rounded-lg"
+                            priority
+                        />
+                    </div>
+                    <button
+                        className="absolute right-4 md:right-16 text-white text-3xl font-bold z-50 px-2 py-1 pb-3 bg-black/40 rounded-full"
+                        onClick={nextImage}
+                        aria-label="Next image"
+                    >
+                        &#8594;
+                    </button>
                 </div>
             )}
 

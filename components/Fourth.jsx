@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export default function Fourth() {
   return (
-    <section className="relative h-[100vh] md:h-[85vh] w-full flex flex-col md:flex-row">
+    <section className="relative h-[120vh] md:h-[85vh] w-full flex flex-col md:flex-row">
       {/* Left Content (Text Section) */}
-      <div className="w-full md:w-2/5 h-3/5 md:h-full bg-amber-50 text-black flex flex-col gap-6 justify-center items-start px-6 py-4 md:px-10">
+      <div className="w-full md:w-2/5 h-3/5 md:h-full bg-white text-black flex flex-col gap-6 justify-center items-start px-6 py-4 md:px-10">
       <div>
         <h2 className="text-3xl md:text-4xl md:font-extralight tracking-widest uppercase">
           Working Hours
@@ -33,9 +33,9 @@ export default function Fourth() {
       </div>
 
       {/* Right Content (Image Section) */}
-      <div className="w-full md:w-4/5 h-2/5 md:h-full bg-cover bg-center relative">
+      <div className="md:w-4/5 md:h-full bg-cover bg-center relative aspect-[3/2] md:aspect-auto">
         <Image
-          src="/hero.jpg" // Replace with your actual image path
+          src="/4.jpg" 
           alt="Harmony of Shapes"
           width={1200}
           height={800}

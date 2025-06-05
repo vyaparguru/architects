@@ -4,18 +4,18 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="bg-amber-50 text-black">
+    <div className="bg-white text-black mt-10 md:mt-20">
       {/* Hero Section */}
-      <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
+      {/* <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
         <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
           <h1 className="text-4xl md:text-6xl text-white font-bold tracking-wide text-center">
             About Us
           </h1>
         </div>
-      </div>
+      </div> */}
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-20">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-28">
         <div className="md:text-center">
           <h2 className="text-4xl md:text-6xl text-black">
             Welcome to Emphasis Architects
@@ -32,7 +32,7 @@ export default function About() {
               Our Story
             </h3>
             <p className="mt-4 text-lg text-black font-light leading-relaxed">
-              Founded as an extension of Aakar Associates — a firm with over 25 years of experience — Emphasis Architects is led by a passionate brother-sister duo. While our founder, Ar. Mayank Verma, brings visionary architectural expertise, our interiors are thoughtfully crafted under the creative direction of Ms. Mehak Verma, ensuring that every space we design is both structurally sound and emotionally resonant.
+              Founded as an extension of Aakar Associates — a firm with over 25 years of experience — Emphasis Architects is led by a passionate brother-sister duo. While our founder, Ar. Mayank Verma, brings visionary architectural expertise, our interiors are thoughtfully crafted under the creative direction of Ms. Tamanna, ensuring that every space we design is both structurally sound and emotionally resonant.
             </p>
           </div>
           <div>
@@ -41,7 +41,7 @@ export default function About() {
               alt="Our Story"
               width={600}
               height={400}
-              className="shadow-lg"
+              className="rounded-md shadow-[8px_8px_24px_0_rgba(0,0,0,0.18),-8px_8px_24px_0_rgba(0,0,0,0.10)]"
             />
           </div>
         </div>
@@ -85,9 +85,9 @@ export default function About() {
             At Emphasis Architects, every project is a blend of creativity, craftsmanship, and heart. Whether you’re building your dream home, reimagining a commercial space, or creating a legacy project, we are here to turn your vision into reality.
           </p>
           <Link href="/contact">
-          <button className="mt-6 px-7 p-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
-            Contact Us
-          </button>
+            <button className="mt-6 px-7 p-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
+              Contact Us
+            </button>
           </Link>
         </div>
       </div>

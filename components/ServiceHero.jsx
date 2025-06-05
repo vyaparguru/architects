@@ -1,9 +1,10 @@
 'use client'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-amber-50 py-16 md:py-20 px-6 lg:px-20 overflow-hidden">
+    <section className="relative bg-white py-16 md:py-20 px-6 lg:px-20 overflow-hidden mt-10 md:mt-20">
       {/* Background overlay */}
       {/* <div className="absolute inset-0 bg-[url('/bg-blueprint.svg')] bg-no-repeat bg-cover opacity-10 pointer-events-none "></div> */}
 
@@ -27,23 +28,20 @@ export default function HeroSection() {
 
           </p>
           <div className="flex flex-row items-center justify-start gap-2 md:gap-4 md:pt-4">
-            <button className="mt-6 px-4 p-3 whitespace-nowrap border-black hover:border-black cursor-pointer border-2 text-md font-bold tracking-widest hover:bg-amber-50 hover:text-black rounded-full bg-black text-white">
+            <Link href="/contact" className="mt-6 px-4 p-3 whitespace-nowrap border-black hover:border-black cursor-pointer border-2 text-md font-bold tracking-widest hover:bg-amber-50 hover:text-black rounded-full bg-black text-white">
               GET IN TOUCH
-            </button>
-            <button className="mt-6 px-4 p-3 whitespace-nowrap border-black cursor-pointer border-2 text-md font-bold tracking-widest bg-amber-50 text-black rounded-full hover:bg-black hover:text-amber-50">
-              LEARN MORE
-            </button>
+            </Link>
           </div>
         </div>
 
         {/* Image */}
         <div className="shadow-xl relative w-full max-w-sm">
           <Image
-            src="/archi/3.jpg" // Add your image to public folder
+            src="/archi/3.jpg" 
             alt="image1"
             width={400}
             height={500}
-            className="object-cover "
+            className="object-cover shadow-lg rounded-md"
           />
         </div>
       </div>

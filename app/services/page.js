@@ -17,23 +17,16 @@ export default function ServicePage() {
         "/archi/6.jpg",
         "/archi/7.jpg",]
     return (
-        <div className="bg-amber-50 text-black">
-            <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/archi/5.jpg')" }}>
-                <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-4xl md:text-6xl text-white font-bold tracking-wide text-center">
-                        Services
-                    </h1>
-                </div>
-            </div>
+        <div className="bg-white text-black">
             <HeroSection />
             <OurServices/>
             <OurProcess />
-            <FeaturedProjects />
+            {/* <FeaturedProjects /> */}
             <h2 className="text-4xl md:text-6xl font-bold py-10 px-6 md:text-center">Gallery</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-6xl mx-auto px-6 md:px-0">
                 {galleryImages.map((src, idx) => (
                     <div key={idx} className="overflow-hidden ">
-                        <Image src={src} alt={`gallery-${idx}`} width={400} height={400} className="w-full h-auto object-cover" />
+                        <Image src={src} alt={`gallery-${idx}`} width={400} height={400} className="w-full h-auto object-cover rounded-md" />
                     </div>
                 ))}
             </div>
