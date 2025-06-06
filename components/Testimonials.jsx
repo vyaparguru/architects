@@ -1,11 +1,25 @@
-"use client"
+"use client";
 
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function useWindowWidth() {
+  const [width, setWidth] = useState(1024);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return width;
+}
+
 function NextArrow(props) {
   const { className, style, onClick } = props;
+  const width = useWindowWidth();
+
   return (
     <button
       className={className}
@@ -14,7 +28,7 @@ function NextArrow(props) {
         display: "block",
         background: "#222",
         borderRadius: "50%",
-        right: window.innerWidth < 768 ? "-20px" : "-30px", // Responsive right position
+        right: width < 768 ? "-20px" : "-30px",
         zIndex: 2,
         width: 36,
         height: 36,
@@ -27,6 +41,8 @@ function NextArrow(props) {
 
 function PrevArrow(props) {
   const { className, style, onClick } = props;
+  const width = useWindowWidth();
+
   return (
     <button
       className={className}
@@ -35,7 +51,7 @@ function PrevArrow(props) {
         display: "block",
         background: "#222",
         borderRadius: "50%",
-        left: window.innerWidth < 768 ? "-20px" : "-30px", // Responsive left position
+        left: width < 768 ? "-20px" : "-30px",
         zIndex: 2,
         width: 36,
         height: 36,
@@ -45,7 +61,6 @@ function PrevArrow(props) {
     />
   );
 }
-
 
 const testimonials = [
   {
@@ -64,7 +79,6 @@ const testimonials = [
     name: "Chatter Singh",
     feedback: "Excellent service and attention to detail. Would definitely work with them again!",
   },
-
 ];
 
 export default function Testimonials() {
