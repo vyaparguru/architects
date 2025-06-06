@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Custom Arrow Components
 function NextArrow(props) {
   const { className, style, onClick } = props;
   return (

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Testimonials from "./Testimonials";
-import Philosophy from "./Philosophy";
+// import Philosophy from "./Philosophy";
 import OurProcess from "./OurProcess";
 import FeaturedProjects from "./FeaturedProjects";
 import HeroSection from "./ServiceHero";

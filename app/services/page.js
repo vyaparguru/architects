@@ -2,9 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Testimonials from "@/components/Testimonials";
-// import Philosophy from "./Philosophy";
+
 import OurProcess from "@/components/OurProcess";
-import FeaturedProjects from "@/components/FeaturedProjects";
+// import FeaturedProjects from "@/components/FeaturedProjects";
 import HeroSection from "@/components/ServiceHero";
 import OurServices from "@/components/OurServices";
 

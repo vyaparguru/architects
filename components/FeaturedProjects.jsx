@@ -1,4 +1,3 @@
-// components/FeaturedProjects.js
 import Image from "next/image";
 
 const projects = [

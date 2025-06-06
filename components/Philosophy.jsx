@@ -1,4 +1,3 @@
-// components/Philosophy.js
 export default function Philosophy() {
   return (
     <section className="bg-white py-16 px-6">
