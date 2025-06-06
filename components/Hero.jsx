@@ -1,18 +1,18 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
-import Navbar from "./Navbar";
+// import { FaBars, FaTimes } from "react-icons/fa";
+// import Navbar from "./Navbar";
 
 export default function Hero() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-  const [projectsOpen, setProjectsOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
+  // const [servicesOpen, setServicesOpen] = useState(false);
+  // const [projectsOpen, setProjectsOpen] = useState(false);
 
-  const closeDrawer = () => {
-    setMenuOpen(false);
-  };
+  // const closeDrawer = () => {
+  //   setMenuOpen(false);
+  // };
 
   return (
     <div className="relative h-[90vh] md:h-[85vh] w-full flex flex-col md:flex-row mt-20 md:mt-20">

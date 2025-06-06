@@ -1,6 +1,6 @@
 "use client"
 
-import ProjectsSection from '@/components/HomeProjects'
+// import ProjectsSection from '@/components/HomeProjects'
 import Project1 from '@/components/Projects/Project1'
 import Project10 from '@/components/Projects/Project10'
 import Project11 from '@/components/Projects/Project11'
