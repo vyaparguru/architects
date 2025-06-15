@@ -18,7 +18,7 @@ export default function Hero() {
     <div className="relative h-[90vh] md:h-[100vh] w-full flex flex-col md:flex-row mt-16">
       {/* Background Image */}
       <div
-        className="w-full md:w-4/5 h-4/5 md:h-full bg-cover bg-center relative"
+        className="w-full md:w-4/5 h-4/6 md:h-full bg-cover bg-center relative"
         style={{ backgroundImage: "url('/hero.jpg')" }}
       >
         
