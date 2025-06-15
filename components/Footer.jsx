@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#895737] text-white pt-16 pb-2">
+    <footer className="bg-[#f4ecd7] text-black pt-16 pb-2">
       <div className="max-w-8xl mx-auto px-6 md:px-12 lg:px-24 grid md:grid-cols-3 gap-16">
         {/* Logo & About */}
         <div>
@@ -50,27 +50,27 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-lg font-semibold text-white">Contact Us</h3>
-          <p className="mt-2 text-white">
+          <h3 className="text-lg font-semibold text-black">Contact Us</h3>
+          <p className="mt-2 text-black">
             SCF-9, LGF, Bhai Randhir Singh Nagar Market, F Block, Ludhiana, Punjab 141001
           </p>
-          <p className="mt-2 text-white flex items-center">
+          <p className="mt-2 text-black flex items-center">
             <FaClock className="mr-2" /> Working Hours: 10:00 AM - 6:30 PM
           </p>
-          <p className="text-white flex items-center">
+          <p className="text-black flex items-center">
             <FaPhoneAlt className="mr-2" /> +91-97805-00608
           </p>
-          <p className="text-white flex items-center">
+          <p className="text-black flex items-center">
             <FaEnvelope className="mr-2" /> emphasis311@gmail.com
           </p>
-          <p className="text-white flex items-center">
+          <p className="text-black flex items-center">
             <FaEnvelope className="mr-2" /> info@emphasisarchitects.com
           </p>
         </div>
 
         {/* Useful Links */}
         <div>
-          <h3 className="text-lg font-semibold text-white">Useful Links</h3>
+          <h3 className="text-lg font-semibold text-black">Useful Links</h3>
           <ul className="mt-4 space-y-2">
             {["Home", "About", "Services", "Projects", "Contact"].map((link) => (
               <li key={link}>
@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="mt-8 pt-6 text-center text-sm text-white">
+      <div className="mt-8 pt-6 text-center text-sm text-black">
         <p>&copy; {new Date().getFullYear()} All Rights Reserved.</p>
         <p>
           Designed and Developed by{" "}

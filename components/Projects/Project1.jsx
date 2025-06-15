@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Project1() {
     return (
-        <section className="flex flex-col md:flex-row w-full min-h-screen bg-white pt-16">
+        <section className="flex flex-col md:flex-row w-full min-h-screen bg-white pt-10 md:pt-16">
             {/* Image Section */}
             <div className="w-full md:w-[70%] aspect-[3/2] md:aspect-[3/2] h-auto md:h-auto relative">
                 <Image
@@ -17,9 +17,9 @@ export default function Project1() {
             </div>
             {/* Text Section */}
             <div className="w-full md:w-[30%] flex flex-col justify-center items-center px-6 md:px-12 py-10 md:py-0 text-center">
-                <h2 className="text-4xl md:font-medium tracking-widest text-black">AURORA ABODE</h2>
+                <h2 className="text-3xl md:text-4xl md:font-medium tracking-widest text-black">AURORA ABODE</h2>
                 <p className="mt-4 text-lg md:text-xl font-light leading-relaxed text-black">
-                    Aurora Abode is a testament to Emphasis Architects’ philosophy of harmonizing geometric precision with organic warmth. This 9,000 sq.ft residence, completed in 2024, showcases our commitment to creating spaces that are both visually striking and deeply functional, where every detail is thoughtfully curated to foster comfort and inspiration.
+                    This 9,000 sq.ft residence, completed in 2024, showcases our commitment to creating spaces that are both visually striking and deeply functional, where every detail is thoughtfully curated to foster comfort and inspiration.
                 </p>
                 <div className="flex gap-8 mt-6 text-black justify-center">
                     <div>
