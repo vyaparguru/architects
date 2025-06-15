@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-white py-16 md:py-20 px-6 lg:px-20 overflow-hidden mt-10 md:mt-20">
+    <section className="relative bg-white py-16 md:py-20 px-6 lg:px-20 overflow-hidden mt-10 md:mt-16">
       {/* Background overlay */}
       {/* <div className="absolute inset-0 bg-[url('/bg-blueprint.svg')] bg-no-repeat bg-cover opacity-10 pointer-events-none "></div> */}
 

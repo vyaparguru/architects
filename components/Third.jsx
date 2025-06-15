@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaPlus } from "react-icons/fa";
 export default function Third() {
   return (
-    <section className="relative h-[80vh] md:h-[85vh] w-full flex flex-col md:flex-row ">
+    <section className="relative h-[100vh] md:h-[100vh] w-full flex flex-col md:flex-row ">
         {/* L Content (Image Section) */}
       <div className="w-full md:w-4/5 h-2/5 md:h-full bg-cover bg-center relative">
         <Image
@@ -15,7 +15,7 @@ export default function Third() {
         />
       </div>
       {/* R Content (Text Section) */}
-      <div className="w-full md:w-2/5 h-3/5 md:h-full bg-white text-black flex flex-col justify-center items-start p-6 md:p-12 md:px-10">
+      <div className="w-full md:w-2/5 h-3/5 md:h-full bg-white text-center text-black flex flex-col justify-center px-6 md:py-12 md:px-10">
         <h2 className="text-4xl md:font-light tracking-widest">
           CRAFTED TO LAST
         </h2>
@@ -24,7 +24,7 @@ export default function Third() {
         </p>
 
         {/* Button */}
-        <button className="mt-6 flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white hover:bg-amber-50 hover:text-black border-black border-2 transition">
+        <button className="mt-6 mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white hover:bg-amber-50 hover:text-black border-black border-2 transition">
           <FaPlus size={16} />
         </button>
       </div>

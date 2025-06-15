@@ -35,7 +35,7 @@ export default function ProjectDetails({
     };
 
     return (
-        <div className="max-w-screen bg-amber-50 mx-auto px-6 md:px-48 py-16 md:py-20">
+        <div className="max-w-screen bg-white mx-auto px-6 md:px-48 pt-40 pb-20">
             <div className="flex flex-col lg:flex-row gap-10">
                 <div className="lg:w-1/2 w-full flex flex-col justify-between">
                     <div>
@@ -167,7 +167,7 @@ export default function ProjectDetails({
                     Email us at info@emphasisarchitects.com — we're here to help.
                 </p>
                 <Link href="/contact">
-                    <button className="mt-6 px-7 p-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-amber-50 hover:text-black text-white rounded-full ">
+                    <button className="mt-6 px-7 p-3 bg-black text-lg md:text-md hover:border-black border-2 hover:border-2 hover:bg-white hover:text-black text-white rounded-full ">
                         Contact Us
                     </button>
                 </Link>

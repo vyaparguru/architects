@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="bg-white text-black mt-10 md:mt-20">
+    <div className="bg-white text-black mt-10 md:mt-16">
       {/* Hero Section */}
       {/* <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
         <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">

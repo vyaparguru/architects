@@ -3,24 +3,34 @@ import Image from "next/image";
 
 export default function Fourth() {
   return (
-    <section className="relative h-[120vh] md:h-[85vh] w-full flex flex-col md:flex-row">
+    <section className="relative h-[100vh] md:h-[100vh] w-full flex flex-col md:flex-row">
+      {/* Right Content (Image Section) */}
+      <div className="md:w-4/5 md:h-full bg-cover bg-center relative aspect-[3/2] md:aspect-auto md:order-1">
+        <Image
+          src="/4.jpg"
+          alt="Harmony of Shapes"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
       {/* Left Content (Text Section) */}
       <div className="w-full md:w-2/5 h-3/5 md:h-full bg-white text-black flex flex-col gap-6 justify-center items-start px-6 py-4 md:px-10">
-      <div>
-        <h2 className="text-3xl md:text-4xl md:font-extralight tracking-widest uppercase">
-          Working Hours
-        </h2>
-        <p className="mt-2 text-lg md:text-xl font-extralight leading-relaxed">
-        10:00 AM - 6:30 PM
-        </p>
+        <div>
+          <h2 className="text-3xl md:text-4xl md:font-extralight tracking-widest uppercase">
+            Working Hours
+          </h2>
+          <p className="mt-2 text-lg md:text-xl font-extralight leading-relaxed">
+            10:00 AM - 6:30 PM
+          </p>
         </div>
         <div>
-        <h2 className="text-3xl md:text-4xl md:font-extralight tracking-widest uppercase">
-          OUR TEAM
-        </h2>
-        <p className="mt-2 text-lg md:text-xl font-extralight leading-relaxed">
-        Our team is a passionate group of individuals dedicated to driving meaningful change. With diverse backgrounds and a shared commitment to our mission, we work together to create a lasting impact in the communities we serve.
-        </p>
+          <h2 className="text-3xl md:text-4xl md:font-extralight tracking-widest uppercase">
+            OUR TEAM
+          </h2>
+          <p className="mt-2 text-lg md:text-xl font-extralight leading-relaxed">
+            Our team is a passionate group of individuals dedicated to driving meaningful change. With diverse backgrounds and a shared commitment to our mission, we work together to create a lasting impact in the communities we serve.
+          </p>
         </div>
         {/* <div>
         <h2 className="text-3xl md:text-4xl md:font-extralight tracking-widest uppercase">
@@ -32,16 +42,6 @@ export default function Fourth() {
         </div> */}
       </div>
 
-      {/* Right Content (Image Section) */}
-      <div className="md:w-4/5 md:h-full bg-cover bg-center relative aspect-[3/2] md:aspect-auto">
-        <Image
-          src="/4.jpg" 
-          alt="Harmony of Shapes"
-          width={1200}
-          height={800}
-          className="w-full h-full object-cover"
-        />
-      </div>
     </section>
   );
 }
