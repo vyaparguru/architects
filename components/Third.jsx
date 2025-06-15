@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
 export default function Third() {
   return (
@@ -24,9 +25,9 @@ export default function Third() {
         </p>
 
         {/* Button */}
-        <button className="mt-6 mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white hover:bg-amber-50 hover:text-black border-black border-2 transition">
+        <Link href="/services" className="mt-6 mx-auto flex items-center justify-center w-12 h-12 rounded-full bg-gray-900 text-white hover:bg-white hover:text-black border-black border-2 transition">
           <FaPlus size={16} />
-        </button>
+        </Link>
       </div>
 
     </section>

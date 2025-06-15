@@ -34,21 +34,21 @@ export default function Navbar() {
                 </Link>
             </div>
             <ul className="hidden lg:flex space-x-6 ">
-                <li className={`cursor-pointer ${isActive("/") ? "border-b-4 border-[#8B5C2A]" : ""}`}>
+                <li className={`cursor-pointer ${isActive("/") ? "border-b-4 border-black" : ""}`}>
                     <Link href="/">Home</Link>
                 </li>
-                <li className={`cursor-pointer ${isActive("/about") ? "border-b-4 border-[#8B5C2A]" : ""}`}>
+                <li className={`cursor-pointer ${isActive("/about") ? "border-b-4 border-black" : ""}`}>
                     <Link href="/about">About us</Link>
                 </li>
                 <li
-                    className={`cursor-pointer relative ${isActive("/services") ? "border-b-4 border-[#8B5C2A]" : ""}`}
+                    className={`cursor-pointer relative ${isActive("/services") ? "border-b-4 border-black" : ""}`}
                     onMouseEnter={() => setServicesOpen(true)}
                     onMouseLeave={() => setServicesOpen(false)}
                 >
                     <Link href="/services">Services</Link>
                 </li>
                 <li
-                    className={`cursor-pointer relative ${isActive("/projects") ? "border-b-4 border-[#8B5C2A]" : ""}`}
+                    className={`cursor-pointer relative ${isActive("/projects") ? "border-b-4 border-black" : ""}`}
                     onMouseEnter={() => setProjectsOpen(true)}
                     onMouseLeave={() => setProjectsOpen(false)}
                 >
@@ -57,7 +57,7 @@ export default function Navbar() {
                 <li className="cursor-pointer">
                     <Link
                         href="/contact"
-                        className={`px-4 py-3 rounded-full border-2 border-[#8B5C2A] bg-[#8B5C2A] text-white transition hover:bg-white hover:text-[#8B5C2A] hover:border-[#8B5C2A] ${isActive("/contact") ? "border-b-4 border-[#8B5C2A]" : ""}`}
+                        className={`px-4 py-3 rounded-full border-2 border-black bg-black text-white transition hover:bg-white hover:text-black hover:border-black ${isActive("/contact") ? "border-b-4 border-black" : ""}`}
                     >
                         Contact us
                     </Link>
@@ -96,17 +96,17 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <ul className="mt-6 space-y-6 px-6 text-2xl">
-                    <li className={`cursor-pointer ${isActive("/") ? "border-b-4 border-[#8B5C2A]" : ""}`}>
+                    <li className={`cursor-pointer ${isActive("/") ? "border-b-4 border-black" : ""}`}>
                         <Link href="/" onClick={closeDrawer}>
                             Home
                         </Link>
                     </li>
-                    <li className={`cursor-pointer ${isActive("/about") ? "border-b-4 border-[#8B5C2A]" : ""}`}>
+                    <li className={`cursor-pointer ${isActive("/about") ? "border-b-4 border-black" : ""}`}>
                         <Link href="/about" onClick={closeDrawer}>
                             About us
                         </Link>
                     </li>
-                    <li className={`cursor-pointer ${isActive("/services") ? "border-b-4 border-[#8B5C2A]" : ""}`}>
+                    <li className={`cursor-pointer ${isActive("/services") ? "border-b-4 border-black" : ""}`}>
                         <div
                             onClick={() => setServicesOpen(!servicesOpen)}
                             className="flex justify-between items-center"
@@ -116,7 +116,7 @@ export default function Navbar() {
                             </Link>
                         </div>
                     </li>
-                    <li className={`cursor-pointer ${isActive("/projects") ? "border-b-4 border-[#8B5C2A]" : ""}`}>
+                    <li className={`cursor-pointer ${isActive("/projects") ? "border-b-4 border-black" : ""}`}>
                         <div
                             onClick={() => setProjectsOpen(!projectsOpen)}
                             className="flex justify-between items-center"
@@ -130,7 +130,7 @@ export default function Navbar() {
                         <Link
                             href="/contact"
                             onClick={closeDrawer}
-                            className="px-4 py-3 rounded-full border-2 border-[#8B5C2A] bg-[#8B5C2A] text-white transition hover:bg-white hover:text-[#8B5C2A] hover:border-[#8B5C2A]"
+                            className="px-4 py-3 rounded-full border-2 border-black bg-black text-white transition hover:bg-white hover:text-black hover:border-black"
                         >
                             Contact us
                         </Link>

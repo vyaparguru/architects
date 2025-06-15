@@ -42,7 +42,7 @@ export default function Hero() {
             residences.
           </p>
           <Link href="/services">
-            <button className="mt-6 px-10 p-4 border-black cursor-pointer border-2 text-md font-bold tracking-widest bg-white text-black rounded-full hover:bg-black hover:text-white">
+            <button className="mt-6 px-10 p-4 border-black cursor-pointer border-2 text-md font-bold tracking-widest bg-black text-white rounded-full hover:bg-white hover:text-black">
               VIEW MORE
             </button>
           </Link>
