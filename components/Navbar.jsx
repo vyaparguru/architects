@@ -130,7 +130,7 @@ export default function Navbar() {
                         <Link
                             href="/contact"
                             onClick={closeDrawer}
-                            className="px-5 py-4 rounded-full border-2 border-[#8B5C2A] bg-[#8B5C2A] text-white transition hover:bg-white hover:text-[#8B5C2A] hover:border-[#8B5C2A]"
+                            className="px-4 py-3 rounded-full border-2 border-[#8B5C2A] bg-[#8B5C2A] text-white transition hover:bg-white hover:text-[#8B5C2A] hover:border-[#8B5C2A]"
                         >
                             Contact us
                         </Link>
