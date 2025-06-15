@@ -18,7 +18,7 @@ export default function HarmonySection() {
         />
       </div>
       {/* Left Content (Text Section) */}
-      <div className="w-full md:w-2/5 h-3/5 md:h-full bg-white text-black flex flex-col justify-center items-start px-6 md:py-12 md:px-10 text-center">
+      <div className="w-full md:w-2/5 h-3/5 md:h-full bg-white text-black flex flex-col justify-center px-6 md:py-12 md:px-10 text-center">
         <h2 className="text-4xl md:font-light tracking-widest">
           HARMONY OF SHAPES
         </h2>
