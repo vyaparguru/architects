@@ -18,11 +18,11 @@ export default function Project5() {
             </div>
             {/* Text Section */}
             <div className="w-full md:w-[30%] flex flex-col justify-center items-center px-6 md:px-12 py-10 md:py-0 text-center">
-                <h2 className="text-4xl md:font-medium tracking-widest text-black">THE GLASS HOUSE</h2>
+                <h2 className="text-3xl md:text-4xl md:font-medium tracking-widest text-black">THE GLASS HOUSE</h2>
                 <p className="mt-4 text-lg md:text-xl font-light leading-relaxed text-black">
-                    The Glass House, completed in 2023, is a luminous 6,000 sq.ft retreat that blurs the boundaries between indoors and out. Through expansive glazing and open layouts, Emphasis Architects creates a sanctuary where transparency, light, and nature are integral to daily living.
+                    Through expansive glazing and open layouts, Emphasis Architects creates a sanctuary where transparency, light, and nature are integral to daily living.
                 </p>
-                <div className="flex gap-8 mt-6 text-black justify-center">
+                <div className="flex gap-8 mt-1 md:mt-6 text-black justify-center">
                     <div>
                         <div className="text-md font-extrabold">Size</div>
                         <div className="text-md">6000 sq.ft</div>

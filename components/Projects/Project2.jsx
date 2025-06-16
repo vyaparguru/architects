@@ -17,11 +17,11 @@ export default function Project2() {
             </div>
             {/* Text Section */}
             <div className="w-full md:w-[30%] flex flex-col justify-center items-center px-6 md:px-12 py-10 md:py-0 text-center">
-                <h2 className="text-4xl md:font-medium tracking-widest text-black">URBAN ARCHES</h2>
+                <h2 className="text-3xl md:text-4xl md:font-medium tracking-widest text-black">URBAN ARCHES</h2>
                 <p className="mt-4 text-lg md:text-xl font-light leading-relaxed text-black">
-                    Urban Arches embodies the seamless blend of tradition and innovation that defines Emphasis Architects. Completed in 2024, this 6,000 sq.ft project features graceful curves and contemporary lines, resulting in a living environment that is both timeless and attuned to modern lifestyles.
+                    Completed in 2024, this 6,000 sq.ft project features graceful curves and contemporary lines, resulting in a living environment that is both timeless and attuned to modern lifestyles.
                 </p>
-                <div className="flex gap-8 mt-6 text-black justify-center">
+                <div className="flex gap-8 mt-1 md:mt-6 text-black justify-center">
                     <div>
                         <div className="text-md font-extrabold">Size</div>
                         <div className="text-md">6000 sq.ft</div>
