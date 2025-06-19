@@ -20,28 +20,28 @@ export default function Footer() {
             <Link
               href="https://www.facebook.com/EmphasisArchitect"
               target="_blank"
-              className="p-3 bg-white rounded-full hover:bg-blue-500"
+              className="p-3 bg-white rounded-full "
             >
               <FaFacebookF className="text-gray-800 text-lg" />
             </Link>
             <Link
               href="https://www.youtube.com/@EmphasisArchitect"
               target="_blank"
-              className="p-3 bg-white rounded-full hover:bg-red-500"
+              className="p-3 bg-white rounded-full "
             >
               <FaYoutube className="text-gray-800 text-lg" />
             </Link>
             <Link
               href="https://www.instagram.com/emphasis.architect/"
               target="_blank"
-              className="p-3 bg-white rounded-full hover:bg-pink-500"
+              className="p-3 bg-white rounded-full "
             >
               <FaInstagram className="text-gray-800 text-lg" />
             </Link>
             <Link
               href="https://www.linkedin.com/company/emphasisarchitect/"
               target="_blank"
-              className="p-3 bg-white rounded-full hover:bg-blue-600"
+              className="p-3 bg-white rounded-full "
             >
               <FaLinkedinIn className="text-gray-800 text-lg" />
             </Link>

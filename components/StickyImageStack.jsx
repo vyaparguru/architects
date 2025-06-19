@@ -1,0 +1,80 @@
+import React from 'react'
+
+const StickyImageStack = ({
+    images = [],
+    videos = [],
+    topImage,
+    projectName
+}) => {
+    return (
+        <>
+            <div className="w-full relative pt-16">
+                {/* Top Section: Image Left, Text Right */}
+                <section className="sticky top-0 h-[50vh] md:h-[100vh] w-full flex flex-col lg:flex-row bg-white z-10">
+                    <div className="lg:w-3/4 w-full aspect-[3/2] h-auto lg:h-full">
+                        <img
+                            src={topImage}
+                            alt="Top Section"
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div className="lg:w-1/4 w-full h-1/2 lg:h-full flex items-center justify-center bg-white">
+                        <h2 className="text-5xl tracking-widest text-center text-black py-60 md:py-0 uppercase">{projectName}</h2>
+                    </div>
+                </section>
+
+                {/* Sticky Image Stack Section */}
+                <div className="flex flex-col lg:flex-row w-full relative z-20">
+                    {/* Left Section - Sticky Heading */}
+                    <div className="lg:w-1/4 w-full h-48 lg:h-screen sticky top-0 bg-white flex items-center justify-center pt-20 p-6 z-20">
+                        <h2 className="text-4xl md:text-5xl tracking-widest text-center text-black">Explore our Visual Story</h2>
+                    </div>
+
+                    {/* Right Section - Stacked Sticky Images */}
+                    <div className="lg:w-3/4 w-full relative bg-white">
+                        {images.map((src, idx) => (
+                            <div
+                                key={idx}
+                                className="sticky top-0 flex items-center justify-center"
+                                style={{ zIndex: idx + 1 }}
+                            >
+                                <img
+                                    src={src}
+                                    alt={`image${idx + 1}`}
+                                    className="max-h-[100vh] w-auto object-contain transition-all duration-500"
+                                />
+                            </div>
+                        ))}
+                        {/* Spacer div to ensure enough scroll height */}
+                        <div style={{ height: `${images.length}vh` }}></div>
+                    </div>
+                </div>
+
+            </div>
+            {/* Video Reels Section */}
+            <section className="w-full py-16 md:py-32 bg-white flex flex-col items-center">
+                <h2 className="text-4xl md:text-5xl text-black tracking-widest mb-10 md:mb-16">Watch our Reels</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4 w-full justify-items-center">
+                    {videos.map((videoSrc, idx) => (
+                        <div
+                            key={idx}
+                            className="w-[90vw] max-w-[320px] aspect-[3/4] md:aspect-[3/5] bg-black rounded-lg overflow-hidden shadow-lg flex justify-center items-center mx-auto"
+                        >
+                            <video
+                                src={videoSrc}
+                                controls
+                                autoPlay
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover"
+                                poster=""
+                            />
+                        </div>
+                    ))}
+                </div>
+            </section>
+        </>
+    )
+}
+
+export default StickyImageStack
