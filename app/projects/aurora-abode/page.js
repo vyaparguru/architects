@@ -5,15 +5,15 @@ import StickyImageStack from "@/components/StickyImageStack"
 const Demo = () => {
   return (
     <StickyImageStack
-      topImage="/projects/aurora-abode/1.jpg"
+      topImage="/projects/aurora-abode/1.JPG"
       projectName="Aurora Abode"
       images={[
-        // '/projects/aurora-abode/1.jpg',
-        // '/projects/aurora-abode/2.jpg',
-        '/projects/aurora-abode/3.jpg',
-        '/projects/aurora-abode/4.jpg',
-        '/projects/aurora-abode/5.jpg',
-        // '/projects/aurora-abode/6.jpg',
+        // '/projects/aurora-abode/1.JPG',
+        // '/projects/aurora-abode/2.JPG',
+        '/projects/aurora-abode/3.JPG',
+        '/projects/aurora-abode/4.JPG',
+        '/projects/aurora-abode/5.JPG',
+        // '/projects/aurora-abode/6.JPG',
       ]}
       videos={[
         '/videos/aurora-abode/1.mov',

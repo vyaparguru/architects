@@ -126,7 +126,7 @@ export default function Navbar() {
                             </Link>
                         </div>
                     </li>
-                    <li className="cursor-pointer pt-96">
+                    <li className="cursor-pointer pt-60">
                         <Link
                             href="/contact"
                             onClick={closeDrawer}
