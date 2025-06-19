@@ -26,7 +26,7 @@ const StickyImageStack = ({
                 {/* Sticky Image Stack Section */}
                 <div className="flex flex-col lg:flex-row w-full relative z-20">
                     {/* Left Section - Sticky Heading */}
-                    <div className="lg:w-1/4 w-full h-40 lg:h-screen md:sticky md:top-0 bg-white flex items-center justify-center md:pt-20 p-6 z-20">
+                    <div className="lg:w-1/4 w-full h-40 lg:h-screen md:sticky md:top-0 bg-white flex items-center justify-center mt-10 md:pt-20 p-6 z-20">
                         <h2 className="text-4xl md:text-5xl tracking-widest text-center text-black">Explore our Visual Story</h2>
                     </div>
 
