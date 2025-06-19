@@ -9,11 +9,11 @@ const Demo = () => {
       projectName="Aurora Abode"
       images={[
         // '/projects/aurora-abode/1.jpg',
-        '/projects/aurora-abode/2.jpg',
+        // '/projects/aurora-abode/2.jpg',
         '/projects/aurora-abode/3.jpg',
         '/projects/aurora-abode/4.jpg',
         '/projects/aurora-abode/5.jpg',
-        '/projects/aurora-abode/6.jpg',
+        // '/projects/aurora-abode/6.jpg',
       ]}
       videos={[
         '/videos/aurora-abode/1.mov',
