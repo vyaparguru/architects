@@ -1,6 +1,6 @@
 import StickyImageStack from "@/components/StickyImageStack"
 
-const imageCount = 45; 
+const imageCount = 51; 
 const videoNumbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const images = Array.from({ length: imageCount }, (_, i) =>

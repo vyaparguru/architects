@@ -4,7 +4,7 @@ const imageCount = 11 ;
 const videoNumbers = [1, 3, 4, 5, 7, 8];
 
 const images = Array.from({ length: imageCount }, (_, i) =>
-  `/projects/the-twin-gables/${i + 1}.JPG`
+  `/projects/the-twin-gables/${i + 1}.jpg`
 );
 
 const videos = videoNumbers.map(
