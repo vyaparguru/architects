@@ -1,32 +1,25 @@
-
-
 import StickyImageStack from "@/components/StickyImageStack"
 
-const Demo = () => {
+const imageCount = 45; 
+const videoNumbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const images = Array.from({ length: imageCount }, (_, i) =>
+  `/projects/aurora-abode/${i + 1}.JPG`
+);
+
+const videos = videoNumbers.map(
+  (num) => `/videos/aurora-abode/${num}.mp4`
+);
+
+const Aurora = () => {
   return (
     <StickyImageStack
-      topImage="/projects/aurora-abode/1.JPG"
+      topImage="/projects/1.JPG"
       projectName="Aurora Abode"
-      images={[
-        // '/projects/aurora-abode/1.JPG',
-        // '/projects/aurora-abode/2.JPG',
-        '/projects/aurora-abode/3.JPG',
-        '/projects/aurora-abode/4.JPG',
-        '/projects/aurora-abode/5.JPG',
-        // '/projects/aurora-abode/6.JPG',
-      ]}
-      videos={[
-        '/videos/aurora-abode/1.mov',
-        '/videos/aurora-abode/2.mov',
-        '/videos/aurora-abode/3.mov',
-        '/videos/aurora-abode/4.mov',
-        '/videos/aurora-abode/5.mov',
-        '/videos/aurora-abode/6.mov',
-        '/videos/aurora-abode/7.mov',
-        '/videos/aurora-abode/8.mov',
-      ]}
+      images={images}
+      videos={videos}
     />
   )
 }
 
-export default Demo
+export default Aurora

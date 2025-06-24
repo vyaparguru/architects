@@ -1,34 +1,25 @@
-"use client"
-import ProjectDetails from "@/components/ProjectDetails";
+import StickyImageStack from "@/components/StickyImageStack"
 
-export default function Gables() {
-    return (
-        <>
-            {/* <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
-                <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-4xl md:text-6xl text-white font-semibold tracking-wide text-center">
-                        The Twin Gables
-                    </h1>
-                </div>
-            </div> */}
-            <ProjectDetails
-                title="The Twin Gables"
-                category="Residential"
-                size="14,000 sq.ft"
-                year="Wood Work Stage Ongoing"
-                intro={[]}
-                descriptionBlocks={[]}
-                mainImage="/projects/8.jpg"
-                galleryImages={[
-                    { src: "/projects/the-twin-gables/1.jpg", colSpan: 2, aspect: "16/11"},
-                    { src: "/projects/the-twin-gables/2.jpg", colSpan: 2, aspect: "16/11"},
-                    { src: "/projects/the-twin-gables/3.jpg", colSpan: 2, aspect: "16/11"},
-                    { src: "/projects/the-twin-gables/4.jpg", colSpan: 2, aspect: "16/11"},
-                    { src: "/projects/the-twin-gables/5.jpg", colSpan: 2, aspect: "16/11"},
-                    { src: "/projects/the-twin-gables/6.jpg", colSpan: 2, aspect: "16/11"},
-                ]}
-                mainImageHeight = "w-full aspect-[16/9] md:aspect-[16/9] relative"
-            />
-        </>
-    );
+const imageCount = 11 ; 
+const videoNumbers = [1, 3, 4, 5, 7, 8];
+
+const images = Array.from({ length: imageCount }, (_, i) =>
+  `/projects/the-twin-gables/${i + 1}.JPG`
+);
+
+const videos = videoNumbers.map(
+  (num) => `/videos/the-twin-gables/${num}.mp4`
+);
+
+const Twin = () => {
+  return (
+    <StickyImageStack
+      topImage="/projects/8.JPG"
+      projectName="The Twin Gables"
+      images={images}
+      videos={videos}
+    />
+  )
 }
+
+export default Twin

@@ -51,15 +51,15 @@ export default function Contact() {
     };
 
     return (
-        <div className="bg-amber-50 text-black">
+        <div className="bg-amber-50 text-black pt-20">
             {/* Hero Section */}
-            <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
+            {/* <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
                 <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
                     <h1 className="text-4xl md:text-6xl text-white font-bold tracking-wide text-center">
                         Contact Us
                     </h1>
                 </div>
-            </div>
+            </div> */}
 
             {/* Contact Information Section */}
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-16 ">

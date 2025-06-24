@@ -1,34 +1,25 @@
-"use client"
-import ProjectDetails from "@/components/ProjectDetails";
+import StickyImageStack from "@/components/StickyImageStack"
 
-export default function Arch() {
-    return (
-        <>
-            {/* <div className="relative bg-cover bg-center h-[50vh] md:h-[60vh]" style={{ backgroundImage: "url('/hero.jpg')" }}>
-                <div className="absolute inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center">
-                    <h1 className="text-4xl md:text-6xl text-white font-semibold tracking-wide text-center">
-                        the Arch edge
-                    </h1>
-                </div>
-            </div> */}
-            <ProjectDetails
-                title="The Arch Edge"
-                category="Residential"
-                size="6000 sq.ft"
-                year="Site Under Process Ceiling Stage"
-                intro={[]}
-                descriptionBlocks={[]}
-                mainImage="/projects/7.jpg"
-                galleryImages={[
-                    // { src: "/projects/the-arch-edge/1.jpg", colSpan: 2, height: 64 },
-                    // { src: "/projects/the-arch-edge/2.jpg", colSpan: 2, height: 64 },
-                    // { src: "/projects/the-arch-edge/3.jpg", colSpan: 2, height: 64 },
-                    // { src: "/projects/the-arch-edge/4.jpg", colSpan: 2, height: 64 },
-                    // { src: "/projects/the-arch-edge/5.jpg", colSpan: 2, height: 64 },
-                    // { src: "/projects/the-arch-edge/6.jpg", colSpan: 2, height: 64 },
-                ]}
-                mainImageHeight = "w-full aspect-[4/3] md:aspect-[4/3] relative"
-            />
-        </>
-    );
+const imageCount = 0; 
+const videoNumbers = [];
+
+const images = Array.from({ length: imageCount }, (_, i) =>
+  `/projects/the-arch-edge/${i + 1}.JPG`
+);
+
+const videos = videoNumbers.map(
+  (num) => `/videos/the-arch-edge/${num}.mp4`
+);
+
+const Arch = () => {
+  return (
+    <StickyImageStack
+      topImage="/projects/7.JPG"
+      projectName="The Arch Edge"
+      images={images}
+      videos={videos}
+    />
+  )
 }
+
+export default Arch
