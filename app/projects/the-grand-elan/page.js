@@ -14,7 +14,7 @@ const videos = videoNumbers.map(
 const Elan = () => {
   return (
     <StickyImageStack
-      topImage="/projects/10.JPG"
+      topImage="/projects/10.jpg"
       projectName="The Grand Elan"
       images={images}
       videos={videos}

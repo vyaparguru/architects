@@ -14,7 +14,7 @@ const videos = videoNumbers.map(
 const Arch = () => {
   return (
     <StickyImageStack
-      topImage="/projects/7.JPG"
+      topImage="/projects/7.jpg"
       projectName="The Arch Edge"
       images={images}
       videos={videos}

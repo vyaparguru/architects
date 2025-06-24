@@ -14,7 +14,7 @@ const videos = videoNumbers.map(
 const Grid = () => {
   return (
     <StickyImageStack
-      topImage="/projects/4.JPG"
+      topImage="/projects/4.jpg"
       projectName="The Grid House"
       images={images}
       videos={videos}
