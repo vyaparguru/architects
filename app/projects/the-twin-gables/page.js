@@ -1,7 +1,7 @@
 import StickyImageStack from "@/components/StickyImageStack"
 
 const imageCount = 11 ; 
-const videoNumbers = [1, 3, 4, 5, 7, 8];
+const videoNumbers = [];
 
 const images = Array.from({ length: imageCount }, (_, i) =>
   `/projects/the-twin-gables/${i + 1}.jpg`
