@@ -14,7 +14,7 @@ const videos = videoNumbers.map(
 const Twin = () => {
   return (
     <StickyImageStack
-      topImage="/projects/8.JPG"
+      topImage="/projects/8.jpg"
       projectName="The Twin Gables"
       images={images}
       videos={videos}
