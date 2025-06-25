@@ -10,7 +10,6 @@ const images = Array.from({ length: imageCount }, (_, i) =>
 const videos = videoNumbers.map(
   (num) => `/videos/aurora-abode/${num}.mp4`
 );
-
 const Aurora = () => {
   return (
     <StickyImageStack
