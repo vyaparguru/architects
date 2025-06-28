@@ -7,7 +7,7 @@ export default function Project9() {
             {/* Image Section */}
             <div className="w-full md:w-[70%] aspect-[3/2] md:aspect-auto h-auto md:h-auto relative">
                 <Image
-                    src="/projects/9.jpg"
+                    src="/projects/imperial-lines/6.jpg"
                     alt="imperial lines"
                     fill
                     className="object-cover object-top "

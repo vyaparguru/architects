@@ -1,6 +1,6 @@
 import StickyImageStack from "@/components/StickyImageStack"
 
-const imageCount = 6 ; 
+const imageCount = 5 ; 
 const videoNumbers = [];
 
 const images = Array.from({ length: imageCount }, (_, i) =>
@@ -14,7 +14,7 @@ const videos = videoNumbers.map(
 const Twin = () => {
   return (
     <StickyImageStack
-      topImage="/projects/9.jpg"
+      topImage="/projects/imperial-lines/6.jpg"
       projectName="Imperial Lines"
       images={images}
       videos={videos}
