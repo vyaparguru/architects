@@ -4,7 +4,7 @@ const imageCount = 13;
 const videoNumbers = [1,2];
 
 const images = Array.from({ length: imageCount }, (_, i) =>
-  `/projects/the-arch-villa/${i + 1}.JPG`
+  `/projects/the-arch-villa/${i + 1}.jpg`
 );
 
 const videos = videoNumbers.map(
@@ -14,7 +14,7 @@ const videos = videoNumbers.map(
 const Arch = () => {
   return (
     <StickyImageStack
-      topImage="/projects/3.jpg"
+      topImage="/projects/3.JPG"
       projectName="The Arch Villa"
       images={images}
       videos={videos}

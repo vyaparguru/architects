@@ -47,7 +47,6 @@ const StickyImageStack = ({
                                     />
                                 </div>
                             ))}
-                            {/* Spacer div to ensure enough scroll height */}
                             <div style={{ height: `${images.length}vh` }}></div>
                         </div>
                     </div>
