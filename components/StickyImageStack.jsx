@@ -34,21 +34,41 @@ const StickyImageStack = ({
 
                         {/* Right Section - Stacked Sticky Images */}
                         <div className="lg:w-3/4 w-full relative bg-white">
-                            {images.map((src, idx) => (
-                                <div
-                                    key={idx}
-                                    className="sticky top-0 flex items-center justify-center h-[60vh] md:h-[100vh] w-full"
-                                    style={{ zIndex: idx + 1 }}
-                                >
-                                    <img
-                                        src={src}
-                                        alt={`image${idx + 1}`}
-                                        className="w-full h-full object-cover transition-all duration-500"
-                                    />
+                            {projectName === 'Aurora Abode' ? (
+                                <div className="flex overflow-x-auto space-x-4 h-[60vh] md:h-[100vh] ">
+                                    {images.map((src, idx) => (
+                                        <div
+                                            key={idx}
+                                            className="flex-shrink-0 w-[90vw] md:w-[70vw] h-full flex items-center justify-center"
+                                        >
+                                            <img
+                                                src={src}
+                                                alt={`image${idx + 1}`}
+                                                className="w-full h-full object-cover "
+                                            />
+                                        </div>
+                                    ))}
                                 </div>
-                            ))}
-                            <div style={{ height: `${images.length}vh` }}></div>
+                            ) : (
+                                <>
+                                    {images.map((src, idx) => (
+                                        <div
+                                            key={idx}
+                                            className="sticky top-0 flex items-center justify-center h-[60vh] md:h-[100vh] w-full"
+                                            style={{ zIndex: idx + 1 }}
+                                        >
+                                            <img
+                                                src={src}
+                                                alt={`image${idx + 1}`}
+                                                className="w-full h-full object-cover transition-all duration-500"
+                                            />
+                                        </div>
+                                    ))}
+                                    <div style={{ height: `${images.length}vh` }}></div>
+                                </>
+                            )}
                         </div>
+
                     </div>
                 )}
 
