@@ -3,6 +3,7 @@
 import Project1 from '@/components/Projects/Project1'
 import Project10 from '@/components/Projects/Project10'
 import Project11 from '@/components/Projects/Project11'
+import Project12 from '@/components/Projects/Project12'
 import Project2 from '@/components/Projects/Project2'
 import Project3 from '@/components/Projects/Project3'
 import Project4 from '@/components/Projects/Project4'
@@ -27,6 +28,7 @@ export const Projects = () => {
             <div className="sticky top-0 z-10"><Project9 /></div>
             <div className="sticky top-0 z-10"><Project10 /></div>
             <div className="sticky top-0 z-10"><Project11 /></div>
+            <div className="sticky top-0 z-10"><Project12 /></div>
         </div>
     )
 }
