@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import AutoImageSlider from './AutoImagesSlider'
 
 const StickyImageStack = ({
     images = [],
@@ -35,20 +36,7 @@ const StickyImageStack = ({
                         {/* Right Section - Stacked Sticky Images */}
                         <div className="lg:w-3/4 w-full relative bg-white">
                             {projectName === 'Aurora Abode' ? (
-                                <div className="flex overflow-x-auto space-x-4 h-[60vh] md:h-[100vh] ">
-                                    {images.map((src, idx) => (
-                                        <div
-                                            key={idx}
-                                            className="flex-shrink-0 w-[90vw] md:w-[70vw] h-full flex items-center justify-center"
-                                        >
-                                            <img
-                                                src={src}
-                                                alt={`image${idx + 1}`}
-                                                className="w-full h-full object-cover "
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
+                                <AutoImageSlider images={images} />
                             ) : (
                                 <>
                                     {images.map((src, idx) => (
